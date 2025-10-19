@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="15249175734192086138">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QMainWindow&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QMainWindow&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/settingswindow.h" line="4" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QString&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QString&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/settingswindow.h" line="5" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QPalette&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QPalette&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/settingswindow.h" line="6" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QMap&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QMap&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/settingswindow.h" line="7" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QObject&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QObject&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/saveload.h" line="4" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QJsonObject&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QJsonObject&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/saveload.h" line="5" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QJsonObject&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QJsonObject&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/settings.h" line="5" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QJsonValue&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QJsonValue&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/settings.h" line="6" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;ui_settingswindow.h&quot; not found." verbose="Include file: &quot;ui_settingswindow.h&quot; not found.">
+            <location file="../src/kOrganizify/kOrganizify/src/settingswindow.cpp" line="2" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QDir&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QDir&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/settingswindow.cpp" line="3" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QMap&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QMap&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/settingswindow.cpp" line="4" column="0"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If slots is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If slots is a macro then please configure it." file0="../src/kOrganizify/kOrganizify/src/settingswindow.cpp">
+            <location file="../src/kOrganizify/kOrganizify/src/settingswindow.h" line="32" column="8"/>
+        </error>
+</analyzerinfo>

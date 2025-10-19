@@ -1,0 +1,8 @@
+BasicEvent
+getTitle
+setTitle
+getDuration
+setDuration
+deleteString call:[clear] noreturn:[clear]
+isValidate call:[return] noreturn:[return]
+operator== call:[return] noreturn:[return]

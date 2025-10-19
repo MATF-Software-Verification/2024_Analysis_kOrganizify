@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="15992628784486265990">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QString&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QString&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/responsewindow.h" line="4" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QWidget&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QWidget&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/responsewindow.h" line="5" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;ui_responsewindow.h&quot; not found." verbose="Include file: &quot;ui_responsewindow.h&quot; not found.">
+            <location file="../src/kOrganizify/kOrganizify/src/responsewindow.cpp" line="2" column="0"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If slots is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If slots is a macro then please configure it." file0="../src/kOrganizify/kOrganizify/src/responsewindow.cpp">
+            <location file="../src/kOrganizify/kOrganizify/src/responsewindow.h" line="20" column="8"/>
+        </error>
+</analyzerinfo>

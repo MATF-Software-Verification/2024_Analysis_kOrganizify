@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="12261226719643565534">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QObject&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QObject&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/saveload.h" line="4" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QJsonObject&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QJsonObject&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/saveload.h" line="5" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QJsonObject&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QJsonObject&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/settings.h" line="5" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QJsonValue&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QJsonValue&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/settings.h" line="6" column="0"/>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;m_color&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;m_color&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="../src/kOrganizify/kOrganizify/src/settings.cpp">
+            <location file="../src/kOrganizify/kOrganizify/src/settings.cpp" line="4" column="5"/>
+            <symbol>m_color</symbol>
+        </error>
+        <error id="duplInheritedMember" severity="warning" msg="The class &apos;Settings&apos; defines member function with name &apos;loadData&apos; also defined in its parent class &apos;SaveLoad&apos;." verbose="The class &apos;Settings&apos; defines member function with name &apos;loadData&apos; also defined in its parent class &apos;SaveLoad&apos;." cwe="398" file0="../src/kOrganizify/kOrganizify/src/settings.cpp">
+            <location file="../src/kOrganizify/kOrganizify/src/settings.cpp" line="8" column="16" info="Derived function &apos;Settings::loadData&apos;"/>
+            <location file="../src/kOrganizify/kOrganizify/src/saveload.h" line="16" column="10" info="Parent function &apos;SaveLoad::loadData&apos;"/>
+            <symbol>Settings</symbol>
+            <symbol>loadData</symbol>
+            <symbol>SaveLoad</symbol>
+        </error>
+        <error id="duplInheritedMember" severity="warning" msg="The class &apos;Settings&apos; defines member function with name &apos;saveData&apos; also defined in its parent class &apos;SaveLoad&apos;." verbose="The class &apos;Settings&apos; defines member function with name &apos;saveData&apos; also defined in its parent class &apos;SaveLoad&apos;." cwe="398" file0="../src/kOrganizify/kOrganizify/src/settings.cpp">
+            <location file="../src/kOrganizify/kOrganizify/src/settings.cpp" line="29" column="16" info="Derived function &apos;Settings::saveData&apos;"/>
+            <location file="../src/kOrganizify/kOrganizify/src/saveload.h" line="15" column="10" info="Parent function &apos;SaveLoad::saveData&apos;"/>
+            <symbol>Settings</symbol>
+            <symbol>saveData</symbol>
+            <symbol>SaveLoad</symbol>
+        </error>
+  <FileInfo check="Class">
+<class name="Settings" file="../src/kOrganizify/kOrganizify/src/settings.h" line="8" col="1" hash="2446743093854418959"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="../src/kOrganizify/kOrganizify/src/settings.h:16:10" my-argnr="1" my-argname="username" file="../src/kOrganizify/kOrganizify/src/settings.cpp" line="9" col="24" value="0"/>
+    <unsafe-usage my-id="../src/kOrganizify/kOrganizify/src/settings.h:17:10" my-argnr="1" my-argname="username" file="../src/kOrganizify/kOrganizify/src/settings.cpp" line="31" col="24" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="loadData" lineNumber="8"/>
+    <functiondecl functionName="fromJson" lineNumber="13"/>
+    <functiondecl functionName="toJson" lineNumber="21"/>
+    <functiondecl functionName="saveData" lineNumber="29"/>
+    <functiondecl functionName="getColor" lineNumber="35"/>
+    <functiondecl functionName="setColor" lineNumber="39"/>
+    <functiondecl functionName="backgroundPath" lineNumber="43"/>
+    <functiondecl functionName="setBackgroundPath" lineNumber="48"/>
+    <functiondecl functionName="getNotifications" lineNumber="53"/>
+    <functiondecl functionName="setNotifications" lineNumber="57"/>
+    <functioncall functionName="QJsonValue"/>
+    <functioncall functionName="Settings"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="fromJson"/>
+    <functioncall functionName="loadData"/>
+    <functioncall functionName="override"/>
+    <functioncall functionName="saveData"/>
+    <functioncall functionName="toBool"/>
+    <functioncall functionName="toJson"/>
+    <functioncall functionName="toObject"/>
+    <functioncall functionName="toString"/>
+  </FileInfo>
+</analyzerinfo>

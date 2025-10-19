@@ -1,0 +1,2 @@
+SyncDeniedWindow call:[setFixedSize,setText,setWindowTitle,setupUi,size] noreturn:[setText]
+SyncDeniedWindow

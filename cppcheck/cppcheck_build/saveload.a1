@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="17980184328730908308">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QObject&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QObject&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/saveload.h" line="4" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QJsonObject&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QJsonObject&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/saveload.h" line="5" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QDir&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QDir&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/saveload.cpp" line="2" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QFile&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QFile&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/saveload.cpp" line="3" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QIODevice&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QIODevice&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/saveload.cpp" line="4" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QJsonDocument&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QJsonDocument&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/saveload.cpp" line="5" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QTextStream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QTextStream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/saveload.cpp" line="6" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QCoreApplication&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QCoreApplication&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/saveload.cpp" line="7" column="0"/>
+        </error>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="../src/kOrganizify/kOrganizify/src/saveload.h:15:10" my-argnr="1" my-argname="username" file="../src/kOrganizify/kOrganizify/src/saveload.cpp" line="27" col="36" value="0"/>
+    <unsafe-usage my-id="../src/kOrganizify/kOrganizify/src/saveload.h:16:10" my-argnr="1" my-argname="username" file="../src/kOrganizify/kOrganizify/src/saveload.cpp" line="40" col="36" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="getFilePath" lineNumber="13"/>
+    <functiondecl functionName="saveData" lineNumber="26"/>
+    <functiondecl functionName="loadData" lineNumber="37"/>
+    <functioncall functionName="QDir"/>
+    <functioncall functionName="QJsonDocument"/>
+    <functioncall functionName="QObject"/>
+    <functioncall functionName="QString"/>
+    <functioncall functionName="SaveLoad"/>
+    <functioncall functionName="Text"/>
+    <functioncall functionName="applicationDirPath"/>
+    <functioncall functionName="arg"/>
+    <functioncall functionName="close"/>
+    <functioncall functionName="dir"/>
+    <functioncall functionName="exists"/>
+    <functioncall functionName="file"/>
+    <functioncall functionName="filePath"/>
+    <functioncall functionName="fromJson"/>
+    <functioncall functionName="getFilePath"/>
+    <functioncall functionName="mkpath"/>
+    <functioncall functionName="object"/>
+    <functioncall functionName="open"/>
+    <functioncall functionName="readAll"/>
+    <functioncall functionName="stream"/>
+    <functioncall functionName="toJson"/>
+    <functioncall functionName="toUtf8"/>
+  </FileInfo>
+</analyzerinfo>

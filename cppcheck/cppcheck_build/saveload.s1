@@ -1,0 +1,4 @@
+SaveLoad
+getFilePath call:[QDir,QString,applicationDirPath,arg,dir,exists,filePath,mkpath] noreturn:[filePath,mkpath]
+saveData call:[QJsonDocument,close,file,getFilePath,open,stream,toJson] noreturn:[close]
+loadData call:[close,file,fromJson,getFilePath,object,open,readAll,stream,toUtf8] noreturn:[object]

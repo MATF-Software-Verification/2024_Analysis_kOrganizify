@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="14670422867832201200">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QString&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QString&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/task.h" line="3" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QDebug&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QDebug&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/task.cpp" line="3" column="0"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Task::m_isChecked&apos; is not initialized in the constructor." verbose="Member variable &apos;Task::m_isChecked&apos; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" inconclusive="true" file0="../src/kOrganizify/kOrganizify/src/task.cpp">
+            <location file="../src/kOrganizify/kOrganizify/src/task.cpp" line="6" column="7"/>
+            <symbol>Task::m_isChecked</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Task&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Task&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="../src/kOrganizify/kOrganizify/src/task.cpp">
+            <location file="../src/kOrganizify/kOrganizify/src/task.h" line="13" column="5"/>
+            <symbol>Task</symbol>
+        </error>
+  <FileInfo check="Class">
+<class name="Task" file="../src/kOrganizify/kOrganizify/src/task.h" line="5" col="1" hash="1857362765100692155"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="setName" lineNumber="13"/>
+    <functiondecl functionName="getName" lineNumber="17"/>
+    <functiondecl functionName="getIsChecked" lineNumber="21"/>
+    <functiondecl functionName="setIsChecked" lineNumber="25"/>
+    <functioncall functionName="Task"/>
+    <functioncall functionName="false"/>
+  </FileInfo>
+</analyzerinfo>

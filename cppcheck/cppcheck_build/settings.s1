@@ -1,0 +1,11 @@
+Settings
+loadData call:[fromJson,loadData] noreturn:[fromJson]
+fromJson call:[toBool,toObject,toString] noreturn:[toBool]
+toJson call:[QJsonValue] noreturn:[QJsonValue]
+saveData call:[saveData,toJson,toObject] noreturn:[saveData]
+getColor
+setColor
+backgroundPath
+setBackgroundPath
+getNotifications
+setNotifications

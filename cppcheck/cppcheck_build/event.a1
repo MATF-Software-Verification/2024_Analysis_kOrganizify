@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="8695527198641991695">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QString&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QString&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/event.h" line="4" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QDateTime&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QDateTime&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/event.h" line="5" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QHash&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QHash&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/event.h" line="6" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QObject&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QObject&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/event.h" line="7" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QString&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QString&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/basicevent.h" line="4" column="0"/>
+        </error>
+        <error id="functionStatic" severity="performance" msg="Technically the member function &apos;Event::deleteString&apos; can be static (but you may consider moving to unnamed namespace)." verbose="The member function &apos;Event::deleteString&apos; can be made a static function. Making a function static can bring a performance benefit since no &apos;this&apos; instance is passed to the function. This change should not cause compiler errors but it does not necessarily make sense conceptually. Think about your design and the task of the function first - is it a function that must not access members of class instances? And maybe it is more appropriate to move this function to an unnamed namespace." cwe="398" inconclusive="true" file0="../src/kOrganizify/kOrganizify/src/event.cpp">
+            <location file="../src/kOrganizify/kOrganizify/src/event.h" line="29" column="10"/>
+            <location file="../src/kOrganizify/kOrganizify/src/event.cpp" line="104" column="13"/>
+            <symbol>Event::deleteString</symbol>
+        </error>
+        <error id="duplInheritedMember" severity="warning" msg="The class &apos;Event&apos; defines member function with name &apos;getTitle&apos; also defined in its parent class &apos;BasicEvent&apos;." verbose="The class &apos;Event&apos; defines member function with name &apos;getTitle&apos; also defined in its parent class &apos;BasicEvent&apos;." cwe="398" file0="../src/kOrganizify/kOrganizify/src/event.cpp">
+            <location file="../src/kOrganizify/kOrganizify/src/event.cpp" line="5" column="16" info="Derived function &apos;Event::getTitle&apos;"/>
+            <location file="../src/kOrganizify/kOrganizify/src/basicevent.h" line="12" column="13" info="Parent function &apos;BasicEvent::getTitle&apos;"/>
+            <symbol>Event</symbol>
+            <symbol>getTitle</symbol>
+            <symbol>BasicEvent</symbol>
+        </error>
+        <error id="duplInheritedMember" severity="warning" msg="The class &apos;Event&apos; defines member function with name &apos;setTitle&apos; also defined in its parent class &apos;BasicEvent&apos;." verbose="The class &apos;Event&apos; defines member function with name &apos;setTitle&apos; also defined in its parent class &apos;BasicEvent&apos;." cwe="398" file0="../src/kOrganizify/kOrganizify/src/event.cpp">
+            <location file="../src/kOrganizify/kOrganizify/src/event.cpp" line="9" column="13" info="Derived function &apos;Event::setTitle&apos;"/>
+            <location file="../src/kOrganizify/kOrganizify/src/basicevent.h" line="13" column="10" info="Parent function &apos;BasicEvent::setTitle&apos;"/>
+            <symbol>Event</symbol>
+            <symbol>setTitle</symbol>
+            <symbol>BasicEvent</symbol>
+        </error>
+        <error id="duplInheritedMember" severity="warning" msg="The class &apos;Event&apos; defines member function with name &apos;getDuration&apos; also defined in its parent class &apos;BasicEvent&apos;." verbose="The class &apos;Event&apos; defines member function with name &apos;getDuration&apos; also defined in its parent class &apos;BasicEvent&apos;." cwe="398" file0="../src/kOrganizify/kOrganizify/src/event.cpp">
+            <location file="../src/kOrganizify/kOrganizify/src/event.cpp" line="13" column="12" info="Derived function &apos;Event::getDuration&apos;"/>
+            <location file="../src/kOrganizify/kOrganizify/src/basicevent.h" line="15" column="9" info="Parent function &apos;BasicEvent::getDuration&apos;"/>
+            <symbol>Event</symbol>
+            <symbol>getDuration</symbol>
+            <symbol>BasicEvent</symbol>
+        </error>
+        <error id="duplInheritedMember" severity="warning" msg="The class &apos;Event&apos; defines member function with name &apos;setDuration&apos; also defined in its parent class &apos;BasicEvent&apos;." verbose="The class &apos;Event&apos; defines member function with name &apos;setDuration&apos; also defined in its parent class &apos;BasicEvent&apos;." cwe="398" file0="../src/kOrganizify/kOrganizify/src/event.cpp">
+            <location file="../src/kOrganizify/kOrganizify/src/event.cpp" line="17" column="13" info="Derived function &apos;Event::setDuration&apos;"/>
+            <location file="../src/kOrganizify/kOrganizify/src/basicevent.h" line="16" column="10" info="Parent function &apos;BasicEvent::setDuration&apos;"/>
+            <symbol>Event</symbol>
+            <symbol>setDuration</symbol>
+            <symbol>BasicEvent</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Event&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Event&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="../src/kOrganizify/kOrganizify/src/event.cpp">
+            <location file="../src/kOrganizify/kOrganizify/src/event.h" line="26" column="5"/>
+            <symbol>Event</symbol>
+        </error>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="../src/kOrganizify/kOrganizify/src/event.h:66:13" my-argnr="1" my-argname="event" file="../src/kOrganizify/kOrganizify/src/event.h" line="67" col="18" value="0"/>
+    <unsafe-usage my-id="../src/kOrganizify/kOrganizify/src/event.h:32:10" my-argnr="1" my-argname="title" file="../src/kOrganizify/kOrganizify/src/event.cpp" line="10" col="26" value="0"/>
+    <unsafe-usage my-id="../src/kOrganizify/kOrganizify/src/event.h:53:10" my-argnr="1" my-argname="other" file="../src/kOrganizify/kOrganizify/src/event.cpp" line="95" col="24" value="0"/>
+    <unsafe-usage my-id="../src/kOrganizify/kOrganizify/src/event.h:29:10" my-argnr="1" my-argname="str" file="../src/kOrganizify/kOrganizify/src/event.cpp" line="105" col="10" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="qHash" lineNumber="66"/>
+    <functiondecl functionName="getTitle" lineNumber="5"/>
+    <functiondecl functionName="setTitle" lineNumber="9"/>
+    <functiondecl functionName="getDuration" lineNumber="13"/>
+    <functiondecl functionName="setDuration" lineNumber="17"/>
+    <functiondecl functionName="setDuration" lineNumber="21"/>
+    <functiondecl functionName="getStartTime" lineNumber="29"/>
+    <functiondecl functionName="setStartTime" lineNumber="33"/>
+    <functiondecl functionName="getEndTime" lineNumber="37"/>
+    <functiondecl functionName="setEndTime" lineNumber="41"/>
+    <functiondecl functionName="getDescription" lineNumber="45"/>
+    <functiondecl functionName="setDescription" lineNumber="49"/>
+    <functiondecl functionName="getLocation" lineNumber="53"/>
+    <functiondecl functionName="setLocation" lineNumber="57"/>
+    <functiondecl functionName="getPriority" lineNumber="61"/>
+    <functiondecl functionName="setPriority" lineNumber="65"/>
+    <functiondecl functionName="customEventPriorityToString" lineNumber="79"/>
+    <functiondecl functionName="overlapsWith" lineNumber="94"/>
+    <functiondecl functionName="clear" lineNumber="98"/>
+    <functiondecl functionName="deleteString" lineNumber="104"/>
+    <functiondecl functionName="customEventPriorityFromString" lineNumber="112"/>
+    <functioncall functionName="Event"/>
+    <functioncall functionName="High"/>
+    <functioncall functionName="Low"/>
+    <functioncall functionName="Medium"/>
+    <functioncall functionName="NoPriority"/>
+    <functioncall functionName="clear"/>
+    <functioncall functionName="deleteString"/>
+    <functioncall functionName="getDuration"/>
+    <functioncall functionName="getEndTime"/>
+    <functioncall functionName="getStartTime"/>
+    <functioncall functionName="getTitle"/>
+    <functioncall functionName="isNull"/>
+    <functioncall functionName="msecsTo"/>
+    <functioncall functionName="qHash"/>
+    <functioncall functionName="setDuration"/>
+    <functioncall functionName="setTitle"/>
+    <functioncall functionName="time"/>
+    <functioncall functionName="utf16"/>
+  </FileInfo>
+</analyzerinfo>

@@ -1,0 +1,23 @@
+qHash call:[getEndTime,getStartTime,getTitle,qHash] noreturn:[qHash]
+Event
+getTitle call:[getTitle] noreturn:[getTitle]
+setTitle call:[setTitle] noreturn:[setTitle]
+getDuration call:[getDuration] noreturn:[getDuration]
+setDuration call:[setDuration] noreturn:[setDuration]
+setDuration call:[msecsTo,setDuration,time] noreturn:[setDuration]
+getStartTime
+setStartTime
+getEndTime
+setEndTime
+getDescription
+setDescription
+getLocation
+setLocation
+getPriority
+setPriority
+operator== call:[getTitle,return] noreturn:[return]
+customEventPriorityToString
+overlapsWith
+clear call:[deleteString] noreturn:[deleteString]
+deleteString call:[clear,isNull,utf16] noreturn:[clear]
+customEventPriorityFromString

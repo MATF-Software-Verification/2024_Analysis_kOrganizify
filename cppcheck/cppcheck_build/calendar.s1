@@ -1,0 +1,19 @@
+qHash call:[getEndTime,getStartTime,getTitle,qHash] noreturn:[qHash]
+Calendar
+Calendar
+loadData call:[fromJson,loadData] noreturn:[fromJson]
+toJson call:[QJsonValue,append,customEventPriorityToString,getDescription,getEndTime,getLocation,getPriority,getStartTime,getTitle,toString] noreturn:[QJsonValue,append]
+fromJson call:[addEvent,customEventPriorityFromString,fromString,setDescription,setEndTime,setLocation,setPriority,setStartTime,setTitle,toArray,toString] noreturn:[addEvent]
+saveData call:[saveData,toJson,toObject] noreturn:[saveData]
+addEvent call:[append,getEndTime,getStartTime,getTitle,insert,isValidate] noreturn:[append,insert]
+removeEvent call:[removeOne] noreturn:[removeOne]
+updateEvent call:[size]
+getEvents
+getBasicEvent
+getEvent
+sizeBasic call:[size] noreturn:[size]
+size call:[size] noreturn:[size]
+getEventsForWeek call:[append,date,getEndTime,getStartTime] noreturn:[append]
+hasEventAt call:[getStartTime]
+clear call:[clear] noreturn:[clear]
+operator= call:[clear]

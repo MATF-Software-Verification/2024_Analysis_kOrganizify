@@ -1,0 +1,258 @@
+SourceLineInfo
+empty
+operator+
+StringRef
+StringRef
+operatorstd::string call:[string] noreturn:[string]
+operator!=
+operator[] call:[assert]
+empty
+size
+isNullTerminated
+begin
+end
+operator""_sr call:[StringRef] noreturn:[StringRef]
+operator""_catch_sr call:[StringRef] noreturn:[StringRef]
+TestInvokerAsMethod
+invoke
+makeTestInvoker call:[new]
+isFalseTest call:[return]
+operator<<
+get
+registerEnum call:[push_back,registerEnum,reserve,size,sizeof,static_assert] noreturn:[push_back,registerEnum]
+rawMemoryToString call:[rawMemoryToString,sizeof] noreturn:[rawMemoryToString]
+convertUnstreamable
+convertUnstreamable call:[what] noreturn:[what]
+convertUnstreamable call:[convertUnknownEnumToString] noreturn:[convertUnknownEnumToString]
+convert call:[operator<<,str] noreturn:[str]
+convert call:[convertUnstreamable] noreturn:[convertUnstreamable]
+stringify call:[convert] noreturn:[convert]
+convertUnknownEnumToString call:[stringify] noreturn:[stringify]
+convert call:[stringify] noreturn:[stringify]
+convert call:[stringify] noreturn:[stringify]
+convert call:[stringify] noreturn:[stringify]
+convert call:[rawMemoryToString] noreturn:[rawMemoryToString]
+convert call:[rawMemoryToString] noreturn:[rawMemoryToString]
+rangeToString call:[str,stringify] noreturn:[str,stringify]
+rangeToString call:[begin,end,rangeToString] noreturn:[rangeToString]
+rangeToString call:[str,stringify] noreturn:[str,stringify]
+convert call:[rangeToString] noreturn:[rangeToString]
+convert call:[rangeToString] noreturn:[rangeToString]
+isBinaryExpression
+getResult
+ITransientExpression
+compareEqual
+compareEqual
+compareEqual
+compareEqual
+compareEqual
+compareNotEqual
+compareNotEqual
+compareNotEqual
+compareNotEqual
+compareNotEqual
+handleExpression call:[handleExpression,makeUnaryExpr] noreturn:[handleExpression]
+operator<=
+operator<=
+AssertionHandler call:[handleIncomplete] noreturn:[handleIncomplete]
+handleExpr call:[handleExpr,makeUnaryExpr] noreturn:[handleExpr]
+operator<<
+operator<<
+captureValues call:[captureValue,stringify] noreturn:[captureValue]
+captureValues call:[captureValue,captureValues,stringify] noreturn:[captureValues]
+SectionInfo
+ExceptionTranslator
+translate
+ExceptionTranslatorRegistrar call:[getMutableRegistryHub,registerTranslator] noreturn:[registerTranslator]
+operator() call:[operator()]
+Approx
+operator== call:[equalityComparisonImpl] noreturn:[equalityComparisonImpl]
+operator== call:[operator==] noreturn:[operator==]
+operator!= call:[operator==] noreturn:[operator==]
+operator!= call:[operator==] noreturn:[operator==]
+operator<=
+operator<=
+operator>=
+operator>=
+epsilon call:[setEpsilon]
+margin call:[setMargin]
+scale
+ExceptionMessageMatcher
+PredicateMatcher
+match call:[m_predicate] noreturn:[m_predicate]
+describe
+Predicate
+ContainsElementMatcher
+match
+describe call:[stringify] noreturn:[stringify]
+ContainsMatcher
+match call:[size]
+describe call:[stringify] noreturn:[stringify]
+EqualsMatcher
+match call:[size]
+describe call:[stringify] noreturn:[stringify]
+ApproxMatcher
+match call:[approx,size]
+describe call:[stringify] noreturn:[stringify]
+epsilon call:[epsilon]
+margin call:[margin]
+scale call:[scale]
+UnorderedEqualsMatcher
+match call:[begin,end,is_permutation,size] noreturn:[is_permutation]
+describe call:[stringify] noreturn:[stringify]
+Contains
+VectorContains
+Equals
+Approx
+UnorderedEquals
+MatchExpr
+streamReconstructedExpression call:[stringify,toString]
+makeMatchExpr
+GeneratorException
+make_unique call:[T]
+SingleValueGenerator
+get
+next
+FixedValuesGenerator
+get
+next call:[size] noreturn:[size]
+GeneratorWrapper
+get call:[get] noreturn:[get]
+next call:[next] noreturn:[next]
+value
+values
+populate call:[emplace_back,move] noreturn:[emplace_back]
+populate call:[emplace_back,value] noreturn:[emplace_back]
+populate call:[T,populate] noreturn:[populate]
+populate call:[populate] noreturn:[populate]
+Generators call:[populate,reserve,sizeof...] noreturn:[populate]
+get call:[get] noreturn:[get]
+next call:[next,size] noreturn:[size]
+table
+makeGenerators call:[move]
+makeGenerators call:[move]
+makeGenerators call:[makeGenerators,value] noreturn:[makeGenerators]
+makeGenerators call:[T,makeGenerators,value] noreturn:[makeGenerators]
+generate call:[acquireGeneratorTracker,decltype,generatorExpression,get,getGenerator,hasGenerator,setGenerator] noreturn:[get,setGenerator]
+TakeGenerator call:[assert] noreturn:[assert]
+get call:[get] noreturn:[get]
+next call:[next]
+take call:[move]
+FilterGenerator call:[GeneratorException,get,m_predicate,next,throw_exception] noreturn:[throw_exception]
+get call:[get] noreturn:[get]
+next call:[get,m_predicate,next]
+filter call:[move]
+RepeatGenerator call:[assert] noreturn:[assert]
+get call:[back,get,push_back] noreturn:[back]
+next call:[next,size]
+repeat call:[move]
+MapGenerator
+get
+next call:[get,m_function,next] noreturn:[m_function]
+map call:[move]
+map call:[move]
+ChunkGenerator call:[GeneratorException,get,next,push_back,reserve,throw_exception] noreturn:[push_back,throw_exception]
+get
+next call:[clear,get,next,push_back] noreturn:[push_back]
+chunk call:[move]
+getCurrentMutableContext call:[createContext] noreturn:[createContext]
+getCurrentContext call:[getCurrentMutableContext] noreturn:[getCurrentMutableContext]
+Option
+Option
+Option
+Option call:[reset] noreturn:[reset]
+operator= call:[T,new,reset] noreturn:[T]
+operator= call:[T,new,reset]
+reset call:[T] noreturn:[T]
+operator*
+operator*
+operator->
+operator->
+valueOr
+some
+none
+operator!
+operatorbool call:[some] noreturn:[some]
+SimplePcg32
+RandomFloatingGenerator call:[next]
+get
+next call:[m_dist]
+RandomIntegerGenerator call:[next]
+get
+next call:[m_dist]
+random
+random
+RangeGenerator call:[T,assert] noreturn:[assert]
+RangeGenerator
+get
+next call:[return]
+range call:[static_assert]
+range call:[static_assert]
+IteratorGenerator call:[GeneratorException,empty,throw_exception] noreturn:[throw_exception]
+get
+next call:[size] noreturn:[size]
+from_range
+from_range call:[begin,end]
+____C_A_T_C_H____T_E_S_T____3 call:[Decomposer,SectionInfo,SourceLineInfo,catchAssertionHandler,complete,getIsChecked,getName,handleExpr,task,while] noreturn:[complete,handleExpr,while]
+____C_A_T_C_H____T_E_S_T____8 call:[Decomposer,SectionInfo,SourceLineInfo,catchAssertionHandler,complete,getName,handleExpr,setName,task,while] noreturn:[complete,handleExpr,while]
+____C_A_T_C_H____T_E_S_T____13 call:[Decomposer,SectionInfo,SourceLineInfo,catchAssertionHandler,complete,getIsChecked,handleExpr,setIsChecked,task,while] noreturn:[complete,handleExpr,while]
+operator&& call:[MatchAllOf < std :: exception >]
+operator|| call:[MatchAnyOf < std :: exception >]
+operator! call:[MatchNotOf < std :: exception >] noreturn:[MatchNotOf < std :: exception >]
+operator&& call:[MatchAllOf < std :: string >]
+operator|| call:[MatchAnyOf < std :: string >]
+operator! call:[MatchNotOf < std :: string >] noreturn:[MatchNotOf < std :: string >]
+ExprLhs < bool >
+operator== call:[compareEqual]
+operator==
+operator!= call:[compareNotEqual]
+operator!=
+operator>
+operator<
+operator>=
+operator<=
+operator|
+operator&
+operator^
+operator&& call:[static_assert] noreturn:[static_assert]
+operator|| call:[static_assert] noreturn:[static_assert]
+makeUnaryExpr
+MatchNotOf < std :: exception >
+match call:[match] noreturn:[match]
+describe call:[toString] noreturn:[toString]
+MatchNotOf < std >
+match call:[match] noreturn:[match]
+describe call:[toString] noreturn:[toString]
+MatchNotOf < std :: string >
+match call:[match] noreturn:[match]
+describe call:[toString] noreturn:[toString]
+match call:[match]
+describe call:[reserve,size,toString] noreturn:[toString]
+operator|| call:[copy,push_back]
+match call:[match]
+describe call:[reserve,size,toString] noreturn:[toString]
+operator|| call:[copy,push_back]
+match call:[match]
+describe call:[reserve,size,toString] noreturn:[toString]
+operator|| call:[copy,push_back]
+match call:[match]
+describe call:[reserve,size,toString] noreturn:[toString]
+operator&& call:[copy,push_back]
+match call:[match]
+describe call:[reserve,size,toString] noreturn:[toString]
+operator&& call:[copy,push_back]
+match call:[match]
+describe call:[reserve,size,toString] noreturn:[toString]
+operator&& call:[copy,push_back]
+streamReconstructedExpression call:[stringify] noreturn:[stringify]
+UnaryExpr < bool >
+streamReconstructedExpression call:[formatReconstructedExpression,stringify] noreturn:[formatReconstructedExpression]
+BinaryExpr < bool , bool >
+operator&& call:[static_assert] noreturn:[static_assert]
+operator|| call:[static_assert] noreturn:[static_assert]
+operator== call:[static_assert] noreturn:[static_assert]
+operator!= call:[static_assert] noreturn:[static_assert]
+operator> call:[static_assert] noreturn:[static_assert]
+operator< call:[static_assert] noreturn:[static_assert]
+operator>= call:[static_assert] noreturn:[static_assert]
+operator<= call:[static_assert] noreturn:[static_assert]

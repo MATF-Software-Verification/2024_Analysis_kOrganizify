@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="17650244503605407628">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QWidget&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QWidget&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/syncresponsewindow.h" line="4" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;ui_syncresponsewindow.h&quot; not found." verbose="Include file: &quot;ui_syncresponsewindow.h&quot; not found.">
+            <location file="../src/kOrganizify/kOrganizify/src/syncresponsewindow.cpp" line="2" column="0"/>
+        </error>
+        <error id="initializerList" severity="style" msg="Member variable &apos;SyncResponseWindow::m_friendName&apos; is in the wrong place in the initializer list." verbose="Member variable &apos;SyncResponseWindow::m_friendName&apos; is in the wrong place in the initializer list. Members are initialized in the order they are declared, not in the order they are in the initializer list.  Keeping the initializer list in the same order that the members were declared prevents order dependent initialization errors." cwe="398" inconclusive="true" file0="../src/kOrganizify/kOrganizify/src/syncresponsewindow.cpp">
+            <location file="../src/kOrganizify/kOrganizify/src/syncresponsewindow.h" line="24" column="13"/>
+            <location file="../src/kOrganizify/kOrganizify/src/syncresponsewindow.cpp" line="7" column="5"/>
+            <symbol>SyncResponseWindow::m_friendName</symbol>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &apos;noResponse&apos; shadows outer function" verbose="Local variable &apos;noResponse&apos; shadows outer function" cwe="398" file0="../src/kOrganizify/kOrganizify/src/syncresponsewindow.cpp">
+            <location file="../src/kOrganizify/kOrganizify/src/syncresponsewindow.cpp" line="36" column="10" info="Shadow variable"/>
+            <location file="../src/kOrganizify/kOrganizify/src/syncresponsewindow.h" line="21" column="10" info="Shadowed declaration"/>
+            <symbol>noResponse</symbol>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="sendYes" lineNumber="30"/>
+    <functiondecl functionName="sendNo" lineNumber="35"/>
+    <functiondecl functionName="changeColor" lineNumber="40"/>
+    <functioncall functionName="QString"/>
+    <functioncall functionName="QWidget"/>
+    <functioncall functionName="SyncResponseWindow"/>
+    <functioncall functionName="arg"/>
+    <functioncall functionName="clicked"/>
+    <functioncall functionName="close"/>
+    <functioncall functionName="connect"/>
+    <functioncall functionName="noResponse"/>
+    <functioncall functionName="number"/>
+    <functioncall functionName="sendNo"/>
+    <functioncall functionName="sendYes"/>
+    <functioncall functionName="setFixedSize"/>
+    <functioncall functionName="setStyleSheet"/>
+    <functioncall functionName="setText"/>
+    <functioncall functionName="setWindowTitle"/>
+    <functioncall functionName="setupUi"/>
+    <functioncall functionName="signals"/>
+    <functioncall functionName="size"/>
+    <functioncall functionName="yesResponse"/>
+  </FileInfo>
+</analyzerinfo>

@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="7149678262256141637">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QString&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QString&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/task.h" line="3" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QObject&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QObject&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/saveload.h" line="4" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QJsonObject&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QJsonObject&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/saveload.h" line="5" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QObject&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QObject&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/toDoList.h" line="6" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QVector&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QVector&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/toDoList.h" line="7" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QString&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QString&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/toDoList.h" line="8" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QJsonArray&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QJsonArray&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/toDoList.h" line="9" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QJsonValue&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QJsonValue&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/toDoList.h" line="10" column="0"/>
+        </error>
+        <error id="duplInheritedMember" severity="warning" msg="The class &apos;ToDoList&apos; defines member function with name &apos;loadData&apos; also defined in its parent class &apos;SaveLoad&apos;." verbose="The class &apos;ToDoList&apos; defines member function with name &apos;loadData&apos; also defined in its parent class &apos;SaveLoad&apos;." cwe="398" file0="../src/kOrganizify/kOrganizify/src/toDoList.cpp">
+            <location file="../src/kOrganizify/kOrganizify/src/toDoList.cpp" line="9" column="16" info="Derived function &apos;ToDoList::loadData&apos;"/>
+            <location file="../src/kOrganizify/kOrganizify/src/saveload.h" line="16" column="10" info="Parent function &apos;SaveLoad::loadData&apos;"/>
+            <symbol>ToDoList</symbol>
+            <symbol>loadData</symbol>
+            <symbol>SaveLoad</symbol>
+        </error>
+        <error id="duplInheritedMember" severity="warning" msg="The class &apos;ToDoList&apos; defines member function with name &apos;saveData&apos; also defined in its parent class &apos;SaveLoad&apos;." verbose="The class &apos;ToDoList&apos; defines member function with name &apos;saveData&apos; also defined in its parent class &apos;SaveLoad&apos;." cwe="398" file0="../src/kOrganizify/kOrganizify/src/toDoList.cpp">
+            <location file="../src/kOrganizify/kOrganizify/src/toDoList.cpp" line="40" column="16" info="Derived function &apos;ToDoList::saveData&apos;"/>
+            <location file="../src/kOrganizify/kOrganizify/src/saveload.h" line="15" column="10" info="Parent function &apos;SaveLoad::saveData&apos;"/>
+            <symbol>ToDoList</symbol>
+            <symbol>saveData</symbol>
+            <symbol>SaveLoad</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Task&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Task&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="../src/kOrganizify/kOrganizify/src/toDoList.cpp">
+            <location file="../src/kOrganizify/kOrganizify/src/task.h" line="13" column="5"/>
+            <symbol>Task</symbol>
+        </error>
+        <error id="constVariableReference" severity="style" msg="Variable &apos;task&apos; can be declared as reference to const" verbose="Variable &apos;task&apos; can be declared as reference to const" cwe="398" file0="../src/kOrganizify/kOrganizify/src/toDoList.cpp">
+            <location file="../src/kOrganizify/kOrganizify/src/toDoList.cpp" line="67" column="16" info="Variable &apos;task&apos; can be declared as reference to const"/>
+            <symbol>task</symbol>
+        </error>
+  <FileInfo check="Class">
+<class name="ToDoList" file="../src/kOrganizify/kOrganizify/src/toDoList.h" line="12" col="1" hash="11963629769035010909"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="../src/kOrganizify/kOrganizify/src/toDoList.h:21:10" my-argnr="1" my-argname="username" file="../src/kOrganizify/kOrganizify/src/toDoList.cpp" line="10" col="24" value="0"/>
+    <unsafe-usage my-id="../src/kOrganizify/kOrganizify/src/toDoList.h:22:10" my-argnr="1" my-argname="username" file="../src/kOrganizify/kOrganizify/src/toDoList.cpp" line="42" col="24" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="loadData" lineNumber="9"/>
+    <functiondecl functionName="fromJson" lineNumber="14"/>
+    <functiondecl functionName="toJson" lineNumber="27"/>
+    <functiondecl functionName="saveData" lineNumber="40"/>
+    <functiondecl functionName="getTasks" lineNumber="45"/>
+    <functiondecl functionName="setTasks" lineNumber="49"/>
+    <functiondecl functionName="addTask" lineNumber="53"/>
+    <functiondecl functionName="removeTask" lineNumber="57"/>
+    <functiondecl functionName="getTask" lineNumber="61"/>
+    <functiondecl functionName="toString" lineNumber="65"/>
+    <functioncall functionName="QJsonValue"/>
+    <functioncall functionName="Task"/>
+    <functioncall functionName="ToDoList"/>
+    <functioncall functionName="addTask"/>
+    <functioncall functionName="append"/>
+    <functioncall functionName="fromJson"/>
+    <functioncall functionName="getIsChecked"/>
+    <functioncall functionName="getName"/>
+    <functioncall functionName="getTasks"/>
+    <functioncall functionName="join"/>
+    <functioncall functionName="loadData"/>
+    <functioncall functionName="override"/>
+    <functioncall functionName="remove"/>
+    <functioncall functionName="saveData"/>
+    <functioncall functionName="setIsChecked"/>
+    <functioncall functionName="setName"/>
+    <functioncall functionName="toArray"/>
+    <functioncall functionName="toBool"/>
+    <functioncall functionName="toJson"/>
+    <functioncall functionName="toObject"/>
+    <functioncall functionName="toString"/>
+  </FileInfo>
+</analyzerinfo>

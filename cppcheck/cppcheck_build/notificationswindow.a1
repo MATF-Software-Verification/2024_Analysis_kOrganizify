@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="1087317672822175272">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QWidget&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QWidget&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/notificationswindow.h" line="4" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QDateTime&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QDateTime&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/notificationswindow.h" line="5" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QTimer&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QTimer&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/notificationswindow.h" line="6" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QtMultimedia/QSoundEffect&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QtMultimedia/QSoundEffect&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/notificationswindow.h" line="8" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;ui_notificationswindow.h&quot; not found." verbose="Include file: &quot;ui_notificationswindow.h&quot; not found.">
+            <location file="../src/kOrganizify/kOrganizify/src/notificationswindow.cpp" line="2" column="0"/>
+        </error>
+        <error id="unknownMacro" severity="error" msg="There is an unknown macro here somewhere. Configuration is required. If slots is a macro then please configure it." verbose="There is an unknown macro here somewhere. Configuration is required. If slots is a macro then please configure it." file0="../src/kOrganizify/kOrganizify/src/notificationswindow.cpp">
+            <location file="../src/kOrganizify/kOrganizify/src/notificationswindow.h" line="22" column="8"/>
+        </error>
+</analyzerinfo>

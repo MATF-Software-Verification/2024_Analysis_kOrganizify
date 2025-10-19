@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="4614938062795448913">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QString&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QString&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/event.h" line="4" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QDateTime&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QDateTime&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/event.h" line="5" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QHash&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QHash&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/event.h" line="6" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QObject&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QObject&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/event.h" line="7" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QString&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QString&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/basicevent.h" line="4" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QObject&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QObject&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/saveload.h" line="4" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QJsonObject&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QJsonObject&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/saveload.h" line="5" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QList&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QList&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/calendar.h" line="6" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QString&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QString&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/calendar.h" line="7" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QJsonArray&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QJsonArray&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/calendar.h" line="8" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QJsonValue&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QJsonValue&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/calendar.h" line="9" column="0"/>
+        </error>
+        <error id="missingMemberCopy" severity="warning" msg="Member variable &apos;Calendar::m_basicEvents&apos; is not assigned in the copy constructor. Should it be copied?" verbose="Member variable &apos;Calendar::m_basicEvents&apos; is not assigned in the copy constructor. Should it be copied?" cwe="398" inconclusive="true" file0="../src/kOrganizify/kOrganizify/src/calendar.cpp">
+            <location file="../src/kOrganizify/kOrganizify/src/calendar.cpp" line="6" column="11"/>
+            <symbol>Calendar::m_basicEvents</symbol>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;m_events&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;m_events&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="../src/kOrganizify/kOrganizify/src/calendar.cpp">
+            <location file="../src/kOrganizify/kOrganizify/src/calendar.cpp" line="7" column="5"/>
+            <symbol>m_events</symbol>
+        </error>
+        <error id="duplInheritedMember" severity="warning" msg="The class &apos;Event&apos; defines member function with name &apos;getTitle&apos; also defined in its parent class &apos;BasicEvent&apos;." verbose="The class &apos;Event&apos; defines member function with name &apos;getTitle&apos; also defined in its parent class &apos;BasicEvent&apos;." cwe="398" file0="../src/kOrganizify/kOrganizify/src/calendar.cpp">
+            <location file="../src/kOrganizify/kOrganizify/src/event.h" line="31" column="13" info="Derived function &apos;Event::getTitle&apos;"/>
+            <location file="../src/kOrganizify/kOrganizify/src/basicevent.h" line="12" column="13" info="Parent function &apos;BasicEvent::getTitle&apos;"/>
+            <symbol>Event</symbol>
+            <symbol>getTitle</symbol>
+            <symbol>BasicEvent</symbol>
+        </error>
+        <error id="duplInheritedMember" severity="warning" msg="The class &apos;Event&apos; defines member function with name &apos;setTitle&apos; also defined in its parent class &apos;BasicEvent&apos;." verbose="The class &apos;Event&apos; defines member function with name &apos;setTitle&apos; also defined in its parent class &apos;BasicEvent&apos;." cwe="398" file0="../src/kOrganizify/kOrganizify/src/calendar.cpp">
+            <location file="../src/kOrganizify/kOrganizify/src/event.h" line="32" column="10" info="Derived function &apos;Event::setTitle&apos;"/>
+            <location file="../src/kOrganizify/kOrganizify/src/basicevent.h" line="13" column="10" info="Parent function &apos;BasicEvent::setTitle&apos;"/>
+            <symbol>Event</symbol>
+            <symbol>setTitle</symbol>
+            <symbol>BasicEvent</symbol>
+        </error>
+        <error id="duplInheritedMember" severity="warning" msg="The class &apos;Event&apos; defines member function with name &apos;getDuration&apos; also defined in its parent class &apos;BasicEvent&apos;." verbose="The class &apos;Event&apos; defines member function with name &apos;getDuration&apos; also defined in its parent class &apos;BasicEvent&apos;." cwe="398" file0="../src/kOrganizify/kOrganizify/src/calendar.cpp">
+            <location file="../src/kOrganizify/kOrganizify/src/event.h" line="34" column="9" info="Derived function &apos;Event::getDuration&apos;"/>
+            <location file="../src/kOrganizify/kOrganizify/src/basicevent.h" line="15" column="9" info="Parent function &apos;BasicEvent::getDuration&apos;"/>
+            <symbol>Event</symbol>
+            <symbol>getDuration</symbol>
+            <symbol>BasicEvent</symbol>
+        </error>
+        <error id="duplInheritedMember" severity="warning" msg="The class &apos;Event&apos; defines member function with name &apos;setDuration&apos; also defined in its parent class &apos;BasicEvent&apos;." verbose="The class &apos;Event&apos; defines member function with name &apos;setDuration&apos; also defined in its parent class &apos;BasicEvent&apos;." cwe="398" file0="../src/kOrganizify/kOrganizify/src/calendar.cpp">
+            <location file="../src/kOrganizify/kOrganizify/src/event.h" line="35" column="11" info="Derived function &apos;Event::setDuration&apos;"/>
+            <location file="../src/kOrganizify/kOrganizify/src/basicevent.h" line="16" column="10" info="Parent function &apos;BasicEvent::setDuration&apos;"/>
+            <symbol>Event</symbol>
+            <symbol>setDuration</symbol>
+            <symbol>BasicEvent</symbol>
+        </error>
+        <error id="duplInheritedMember" severity="warning" msg="The class &apos;Calendar&apos; defines member function with name &apos;loadData&apos; also defined in its parent class &apos;SaveLoad&apos;." verbose="The class &apos;Calendar&apos; defines member function with name &apos;loadData&apos; also defined in its parent class &apos;SaveLoad&apos;." cwe="398" file0="../src/kOrganizify/kOrganizify/src/calendar.cpp">
+            <location file="../src/kOrganizify/kOrganizify/src/calendar.cpp" line="10" column="16" info="Derived function &apos;Calendar::loadData&apos;"/>
+            <location file="../src/kOrganizify/kOrganizify/src/saveload.h" line="16" column="10" info="Parent function &apos;SaveLoad::loadData&apos;"/>
+            <symbol>Calendar</symbol>
+            <symbol>loadData</symbol>
+            <symbol>SaveLoad</symbol>
+        </error>
+        <error id="duplInheritedMember" severity="warning" msg="The class &apos;Calendar&apos; defines member function with name &apos;saveData&apos; also defined in its parent class &apos;SaveLoad&apos;." verbose="The class &apos;Calendar&apos; defines member function with name &apos;saveData&apos; also defined in its parent class &apos;SaveLoad&apos;." cwe="398" file0="../src/kOrganizify/kOrganizify/src/calendar.cpp">
+            <location file="../src/kOrganizify/kOrganizify/src/calendar.cpp" line="51" column="16" info="Derived function &apos;Calendar::saveData&apos;"/>
+            <location file="../src/kOrganizify/kOrganizify/src/saveload.h" line="15" column="10" info="Parent function &apos;SaveLoad::saveData&apos;"/>
+            <symbol>Calendar</symbol>
+            <symbol>saveData</symbol>
+            <symbol>SaveLoad</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Event&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Event&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="../src/kOrganizify/kOrganizify/src/calendar.cpp">
+            <location file="../src/kOrganizify/kOrganizify/src/event.h" line="26" column="5"/>
+            <symbol>Event</symbol>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::any_of algorithm instead of a raw loop." verbose="Consider using std::any_of algorithm instead of a raw loop." cwe="398" file0="../src/kOrganizify/kOrganizify/src/calendar.cpp">
+            <location file="../src/kOrganizify/kOrganizify/src/calendar.cpp" line="134" column="5"/>
+        </error>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="../src/kOrganizify/kOrganizify/src/event.h:66:13" my-argnr="1" my-argname="event" file="../src/kOrganizify/kOrganizify/src/event.h" line="67" col="18" value="0"/>
+    <unsafe-usage my-id="../src/kOrganizify/kOrganizify/src/calendar.h:15:5" my-argnr="1" my-argname="other" file="../src/kOrganizify/kOrganizify/src/calendar.cpp" line="7" col="16" value="0"/>
+    <unsafe-usage my-id="../src/kOrganizify/kOrganizify/src/calendar.h:25:10" my-argnr="1" my-argname="username" file="../src/kOrganizify/kOrganizify/src/calendar.cpp" line="11" col="24" value="0"/>
+    <unsafe-usage my-id="../src/kOrganizify/kOrganizify/src/calendar.h:26:10" my-argnr="1" my-argname="username" file="../src/kOrganizify/kOrganizify/src/calendar.cpp" line="53" col="24" value="0"/>
+    <unsafe-usage my-id="../src/kOrganizify/kOrganizify/src/calendar.h:16:14" my-argnr="1" my-argname="other" file="../src/kOrganizify/kOrganizify/src/calendar.cpp" line="153" col="16" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="qHash" lineNumber="66"/>
+    <functiondecl functionName="loadData" lineNumber="10"/>
+    <functiondecl functionName="toJson" lineNumber="15"/>
+    <functiondecl functionName="fromJson" lineNumber="33"/>
+    <functiondecl functionName="saveData" lineNumber="51"/>
+    <functiondecl functionName="addEvent" lineNumber="56"/>
+    <functiondecl functionName="removeEvent" lineNumber="81"/>
+    <functiondecl functionName="updateEvent" lineNumber="92"/>
+    <functiondecl functionName="getEvents" lineNumber="101"/>
+    <functiondecl functionName="getBasicEvent" lineNumber="105"/>
+    <functiondecl functionName="getEvent" lineNumber="109"/>
+    <functiondecl functionName="sizeBasic" lineNumber="113"/>
+    <functiondecl functionName="size" lineNumber="117"/>
+    <functiondecl functionName="getEventsForWeek" lineNumber="121"/>
+    <functiondecl functionName="hasEventAt" lineNumber="133"/>
+    <functiondecl functionName="clear" lineNumber="142"/>
+    <functioncall functionName="BasicEvent"/>
+    <functioncall functionName="Calendar"/>
+    <functioncall functionName="Event"/>
+    <functioncall functionName="ISODate"/>
+    <functioncall functionName="QJsonValue"/>
+    <functioncall functionName="addEvent"/>
+    <functioncall functionName="append"/>
+    <functioncall functionName="clear"/>
+    <functioncall functionName="customEventPriorityFromString"/>
+    <functioncall functionName="customEventPriorityToString"/>
+    <functioncall functionName="date"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="fromJson"/>
+    <functioncall functionName="fromString"/>
+    <functioncall functionName="getDescription"/>
+    <functioncall functionName="getEndTime"/>
+    <functioncall functionName="getLocation"/>
+    <functioncall functionName="getPriority"/>
+    <functioncall functionName="getStartTime"/>
+    <functioncall functionName="getTitle"/>
+    <functioncall functionName="insert"/>
+    <functioncall functionName="isValidate"/>
+    <functioncall functionName="loadData"/>
+    <functioncall functionName="override"/>
+    <functioncall functionName="qHash"/>
+    <functioncall functionName="removeOne"/>
+    <functioncall functionName="saveData"/>
+    <functioncall functionName="setDescription"/>
+    <functioncall functionName="setEndTime"/>
+    <functioncall functionName="setLocation"/>
+    <functioncall functionName="setPriority"/>
+    <functioncall functionName="setStartTime"/>
+    <functioncall functionName="setTitle"/>
+    <functioncall functionName="size"/>
+    <functioncall functionName="toArray"/>
+    <functioncall functionName="toJson"/>
+    <functioncall functionName="toObject"/>
+    <functioncall functionName="toString"/>
+    <functioncall functionName="true"/>
+  </FileInfo>
+</analyzerinfo>

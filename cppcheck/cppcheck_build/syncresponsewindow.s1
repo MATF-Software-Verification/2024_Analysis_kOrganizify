@@ -1,0 +1,5 @@
+SyncResponseWindow call:[connect,number,setFixedSize,setText,setWindowTitle,setupUi,size] noreturn:[connect]
+SyncResponseWindow
+sendYes call:[close,yesResponse] noreturn:[close]
+sendNo call:[close,noResponse] noreturn:[close]
+changeColor call:[QString,arg,setStyleSheet] noreturn:[setStyleSheet]

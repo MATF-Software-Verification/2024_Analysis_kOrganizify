@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="7432444750474708425">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QWidget&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QWidget&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/syncdeniedwindow.h" line="4" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;ui_syncdeniedwindow.h&quot; not found." verbose="Include file: &quot;ui_syncdeniedwindow.h&quot; not found.">
+            <location file="../src/kOrganizify/kOrganizify/src/syncdeniedwindow.cpp" line="2" column="0"/>
+        </error>
+  <FileInfo check="Class">
+<class name="SyncDeniedWindow" file="../src/kOrganizify/kOrganizify/src/syncdeniedwindow.h" line="10" col="1" hash="1191270395432135042"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functioncall functionName="QWidget"/>
+    <functioncall functionName="SyncDeniedWindow"/>
+    <functioncall functionName="setFixedSize"/>
+    <functioncall functionName="setText"/>
+    <functioncall functionName="setWindowTitle"/>
+    <functioncall functionName="setupUi"/>
+    <functioncall functionName="size"/>
+  </FileInfo>
+</analyzerinfo>

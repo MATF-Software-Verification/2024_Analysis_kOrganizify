@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="13613139154179009144">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;QString&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;QString&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="../src/kOrganizify/kOrganizify/src/basicevent.h" line="4" column="0"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;BasicEvent::m_duration&apos; is not initialized in the constructor." verbose="Member variable &apos;BasicEvent::m_duration&apos; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="../src/kOrganizify/kOrganizify/src/basicevent.cpp">
+            <location file="../src/kOrganizify/kOrganizify/src/basicevent.cpp" line="3" column="13"/>
+            <symbol>BasicEvent::m_duration</symbol>
+        </error>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="../src/kOrganizify/kOrganizify/src/basicevent.h:21:10" my-argnr="1" my-argname="other" file="../src/kOrganizify/kOrganizify/src/basicevent.cpp" line="29" col="20" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="getTitle" lineNumber="5"/>
+    <functiondecl functionName="setTitle" lineNumber="8"/>
+    <functiondecl functionName="getDuration" lineNumber="12"/>
+    <functiondecl functionName="setDuration" lineNumber="15"/>
+    <functiondecl functionName="deleteString" lineNumber="19"/>
+    <functiondecl functionName="isValidate" lineNumber="23"/>
+    <functioncall functionName="BasicEvent"/>
+    <functioncall functionName="clear"/>
+  </FileInfo>
+</analyzerinfo>

@@ -1,0 +1,1254 @@
+SourceLineInfo
+empty
+operator+
+StringRef
+StringRef
+operatorstd::string call:[string] noreturn:[string]
+operator!=
+operator[] call:[assert]
+empty
+size
+isNullTerminated
+begin
+end
+operator""_sr call:[StringRef] noreturn:[StringRef]
+operator""_catch_sr call:[StringRef] noreturn:[StringRef]
+TestInvokerAsMethod
+invoke
+makeTestInvoker call:[new]
+isFalseTest call:[return]
+operator<<
+get
+registerEnum call:[push_back,registerEnum,reserve,size,sizeof,static_assert] noreturn:[push_back,registerEnum]
+rawMemoryToString call:[rawMemoryToString,sizeof] noreturn:[rawMemoryToString]
+convertUnstreamable
+convertUnstreamable call:[what] noreturn:[what]
+convertUnstreamable call:[convertUnknownEnumToString] noreturn:[convertUnknownEnumToString]
+stringify call:[convert] noreturn:[convert]
+convertUnknownEnumToString call:[stringify] noreturn:[stringify]
+convert call:[stringify] noreturn:[stringify]
+convert call:[stringify] noreturn:[stringify]
+convert call:[stringify] noreturn:[stringify]
+convert call:[rawMemoryToString] noreturn:[rawMemoryToString]
+convert call:[rawMemoryToString] noreturn:[rawMemoryToString]
+rangeToString call:[str,stringify] noreturn:[str,stringify]
+rangeToString call:[begin,end,rangeToString] noreturn:[rangeToString]
+rangeToString call:[str,stringify] noreturn:[str,stringify]
+convert call:[rangeToString] noreturn:[rangeToString]
+convert call:[rangeToString] noreturn:[rangeToString]
+symbol call:[str] noreturn:[str]
+convert call:[count,str,symbol] noreturn:[str]
+convert call:[count,str] noreturn:[str]
+convert call:[count,str] noreturn:[str]
+convert call:[count,str] noreturn:[str]
+convert call:[stringify,time_since_epoch]
+convert call:[gmtime,sizeof,strftime,string,to_time_t] noreturn:[string]
+isBinaryExpression
+getResult
+ITransientExpression
+compareEqual
+compareEqual
+compareEqual
+compareEqual
+compareEqual
+compareNotEqual
+compareNotEqual
+compareNotEqual
+compareNotEqual
+compareNotEqual
+handleExpression call:[handleExpression,makeUnaryExpr] noreturn:[handleExpression]
+operator<=
+operator<=
+AssertionHandler call:[handleIncomplete] noreturn:[handleIncomplete]
+handleExpr call:[handleExpr,makeUnaryExpr] noreturn:[handleExpr]
+operator<<
+operator<<
+captureValues call:[captureValue,stringify] noreturn:[captureValue]
+captureValues call:[captureValue,captureValues,stringify] noreturn:[captureValues]
+SectionInfo
+ExceptionTranslator
+translate
+ExceptionTranslatorRegistrar call:[getMutableRegistryHub,registerTranslator] noreturn:[registerTranslator]
+operator() call:[operator()]
+Approx
+operator== call:[equalityComparisonImpl] noreturn:[equalityComparisonImpl]
+operator== call:[operator==] noreturn:[operator==]
+operator!= call:[operator==] noreturn:[operator==]
+operator!= call:[operator==] noreturn:[operator==]
+operator<=
+operator<=
+operator>=
+operator>=
+epsilon call:[setEpsilon]
+margin call:[setMargin]
+scale
+ExceptionMessageMatcher
+PredicateMatcher
+match call:[m_predicate] noreturn:[m_predicate]
+describe
+Predicate
+ContainsElementMatcher
+match
+describe call:[stringify] noreturn:[stringify]
+ContainsMatcher
+match call:[size]
+describe call:[stringify] noreturn:[stringify]
+EqualsMatcher
+match call:[size]
+describe call:[stringify] noreturn:[stringify]
+ApproxMatcher
+match call:[approx,size]
+describe call:[stringify] noreturn:[stringify]
+epsilon call:[epsilon]
+margin call:[margin]
+scale call:[scale]
+UnorderedEqualsMatcher
+match call:[begin,end,is_permutation,size] noreturn:[is_permutation]
+describe call:[stringify] noreturn:[stringify]
+Contains
+VectorContains
+Equals
+Approx
+UnorderedEquals
+makeMatchExpr
+GeneratorException
+make_unique call:[T]
+SingleValueGenerator
+get
+next
+FixedValuesGenerator
+get
+next call:[size] noreturn:[size]
+GeneratorWrapper
+get call:[get] noreturn:[get]
+next call:[next] noreturn:[next]
+value
+values
+populate call:[emplace_back,move] noreturn:[emplace_back]
+populate call:[emplace_back,value] noreturn:[emplace_back]
+populate call:[T,populate] noreturn:[populate]
+populate call:[populate] noreturn:[populate]
+Generators call:[populate,reserve,sizeof...] noreturn:[populate]
+get call:[get] noreturn:[get]
+next call:[next,size] noreturn:[size]
+table
+makeGenerators call:[move]
+makeGenerators call:[move]
+makeGenerators call:[makeGenerators,value] noreturn:[makeGenerators]
+makeGenerators call:[T,makeGenerators,value] noreturn:[makeGenerators]
+generate call:[acquireGeneratorTracker,decltype,generatorExpression,get,getGenerator,hasGenerator,setGenerator] noreturn:[get,setGenerator]
+TakeGenerator call:[assert] noreturn:[assert]
+get call:[get] noreturn:[get]
+next call:[next]
+take call:[move]
+FilterGenerator call:[GeneratorException,get,m_predicate,next,throw_exception] noreturn:[throw_exception]
+get call:[get] noreturn:[get]
+next call:[get,m_predicate,next]
+filter call:[move]
+RepeatGenerator call:[assert] noreturn:[assert]
+get call:[back,get,push_back] noreturn:[back]
+next call:[next,size]
+repeat call:[move]
+MapGenerator
+get
+next call:[get,m_function,next] noreturn:[m_function]
+map call:[move]
+map call:[move]
+ChunkGenerator call:[GeneratorException,get,next,push_back,reserve,throw_exception] noreturn:[push_back,throw_exception]
+get
+next call:[clear,get,next,push_back] noreturn:[push_back]
+chunk call:[move]
+getCurrentMutableContext call:[createContext] noreturn:[createContext]
+getCurrentContext call:[getCurrentMutableContext] noreturn:[getCurrentMutableContext]
+SimplePcg32
+RandomFloatingGenerator call:[next]
+get
+next call:[m_dist]
+RandomIntegerGenerator call:[next]
+get
+next call:[m_dist]
+random
+random
+RangeGenerator call:[T,assert] noreturn:[assert]
+RangeGenerator
+get
+next call:[return]
+range call:[static_assert]
+range call:[static_assert]
+IteratorGenerator call:[GeneratorException,empty,throw_exception] noreturn:[throw_exception]
+get
+next call:[size] noreturn:[size]
+from_range
+from_range call:[begin,end]
+addCharToPattern
+reportInvalidArguments
+create call:[T]
+getDescription call:[string] noreturn:[string]
+ListenerRegistrar call:[getMutableRegistryHub,registerListener] noreturn:[registerListener]
+writeAttribute call:[writeAttribute]
+writeAttribute call:[str,writeAttribute] noreturn:[writeAttribute]
+operator==
+ITracker
+nameAndLocation
+hasStarted
+marginComparison call:[return]
+Approx
+custom call:[Approx] noreturn:[Approx]
+operator- call:[temp]
+toString call:[str,stringify] noreturn:[str]
+equalityComparisonImpl call:[fabs,isinf,marginComparison] noreturn:[marginComparison]
+setMargin call:[ReusableStringStream,str,throw_domain_error,while] noreturn:[throw_domain_error]
+setEpsilon call:[ReusableStringStream,str,throw_domain_error,while] noreturn:[throw_domain_error]
+operator""_a call:[Approx] noreturn:[Approx]
+operator""_a call:[Approx] noreturn:[Approx]
+engage call:[assert,engage_platform] noreturn:[engage_platform]
+disengage call:[assert,disengage_platform] noreturn:[disengage_platform]
+FatalConditionHandlerGuard call:[engage] noreturn:[engage]
+FatalConditionHandlerGuard call:[disengage] noreturn:[disengage]
+operator<< call:[streamReconstructedExpression]
+LazyExpression
+LazyExpression
+operatorbool
+operator<< call:[isBinaryExpression]
+AssertionHandler
+handleExpr call:[handleExpr] noreturn:[handleExpr]
+handleMessage call:[handleMessage] noreturn:[handleMessage]
+allowThrows call:[allowThrows,getConfig,getCurrentContext] noreturn:[allowThrows]
+complete call:[ReusableStringStream,setCompleted,str,throw_domain_error] noreturn:[throw_domain_error]
+setCompleted
+handleUnexpectedInflightException call:[handleUnexpectedInflightException,translateActiveException] noreturn:[handleUnexpectedInflightException]
+handleExceptionThrownAsExpected call:[handleNonExpr] noreturn:[handleNonExpr]
+handleExceptionNotThrownAsExpected call:[handleNonExpr] noreturn:[handleNonExpr]
+handleUnexpectedExceptionNotThrown call:[handleUnexpectedExceptionNotThrown] noreturn:[handleUnexpectedExceptionNotThrown]
+handleThrowingCallSkipped call:[handleNonExpr] noreturn:[handleNonExpr]
+handleExceptionMatchExpr call:[Equals,handleExceptionMatchExpr] noreturn:[handleExceptionMatchExpr]
+AssertionResultData
+reconstructExpression call:[empty,str] noreturn:[str]
+AssertionResult
+succeeded call:[isOk] noreturn:[isOk]
+isOk call:[isOk,shouldSuppressFailure] noreturn:[shouldSuppressFailure]
+getResultType
+hasExpression call:[empty] noreturn:[empty]
+hasMessage call:[empty] noreturn:[empty]
+getExpression call:[isFalseTest,reserve,size]
+getExpressionInMacro call:[empty,reserve,size]
+hasExpandedExpression call:[getExpandedExpression,getExpression,hasExpression] noreturn:[getExpression]
+getExpandedExpression call:[empty,getExpression,reconstructExpression]
+getMessage
+getSourceInfo
+getTestMacroName
+handleExceptionMatchExpr call:[expr,handleExpr,translateActiveException] noreturn:[handleExpr]
+isWhitespace call:[find]
+isBreakableBefore call:[find]
+isBreakableAfter call:[find]
+iterator
+line
+isBoundary call:[assert,isBreakableAfter,isBreakableBefore,isWhitespace,line,size] noreturn:[isBreakableAfter]
+calcLength call:[assert,indent,isBoundary,isWhitespace,line,size]
+indent
+addIndentAndSuffix call:[indent,string]
+iterator call:[assert,calcLength]
+operator* call:[addIndentAndSuffix,assert,line,size,substr] noreturn:[addIndentAndSuffix]
+operator++ call:[calcLength,isWhitespace,line,size] noreturn:[calcLength]
+operator++ call:[operator++,prev]
+operator==
+operator!= call:[operator==] noreturn:[operator==]
+Column call:[push_back] noreturn:[push_back]
+width call:[assert]
+indent
+initialIndent
+width
+begin call:[iterator] noreturn:[iterator]
+end call:[size]
+operator<<
+toString call:[str] noreturn:[str]
+Spacer call:[width] noreturn:[width]
+iterator call:[end,push_back,reserve,size] noreturn:[push_back]
+iterator call:[begin,push_back,reserve,size] noreturn:[push_back]
+operator==
+operator!=
+operator* call:[end,size,string,width] noreturn:[string]
+operator++ call:[end,size]
+operator++ call:[operator++,prev]
+begin call:[iterator] noreturn:[iterator]
+end call:[EndTag]
+operator+= call:[push_back]
+operator+
+operator<<
+toString call:[str] noreturn:[str]
+operator+
+Args
+Args
+exeName
+isOptPrefix
+loadBuffer call:[empty,find_first_of,isOptPrefix,push_back,resize,size,substr] noreturn:[push_back]
+TokenStream
+TokenStream call:[loadBuffer] noreturn:[loadBuffer]
+operatorbool call:[empty]
+count call:[size]
+operator* call:[assert,empty,front] noreturn:[front]
+operator-> call:[assert,empty,front] noreturn:[front]
+operator++ call:[begin,erase,loadBuffer,size] noreturn:[erase,loadBuffer]
+ResultBase
+ParseState
+type
+remainingTokens
+convertInto call:[fail,ok,runtimeError] noreturn:[ok,runtimeError]
+convertInto call:[ok] noreturn:[ok]
+convertInto call:[begin,end,ok,runtimeError,tolower,transform] noreturn:[ok,runtimeError]
+isContainer
+isFlag
+isFlag
+BoundValueRef
+BoundFlagRef
+invoke call:[lambda] noreturn:[lambda]
+invoke call:[lambda,ok] noreturn:[ok]
+invokeLambda call:[convertInto,invoke] noreturn:[invoke]
+BoundLambda
+BoundFlagLambda
+validate call:[ok] noreturn:[ok]
+cardinality
+parse call:[TokenStream,exeName,parse] noreturn:[parse]
+makeRef
+ExeName
+ExeName
+ExeName
+name
+set call:[find_last_of,ok,setValue,substr] noreturn:[ok,setValue]
+normaliseOpt
+Opt
+Opt
+Opt
+Opt
+operator[] call:[push_back]
+getHelpColumns call:[empty,str]
+isMatch call:[normaliseOpt]
+Help call:[operator(),optional] noreturn:[optional]
+operator|=
+operator|= call:[push_back]
+operator|= call:[push_back]
+operator|= call:[begin,end,insert]
+operator| call:[Parser]
+operator+= call:[operator|=] noreturn:[operator|=]
+operator+ call:[operator|] noreturn:[operator|]
+getHelpColumns call:[begin,end,getHelpColumns,insert] noreturn:[insert]
+writeToStream call:[Column,Spacer,cardinality,empty,getHelpColumns,hint,indent,isOptional,name,size,width]
+operator<< call:[writeToStream]
+makeCommandLineParser call:[Arg,ExeName,Help,Opt,c_str,convertInto,emplace_back,empty,end,erase,f,find,getFactories,getRegistryHub,getReporterRegistry,getline,is_open,ok,push_back,runtimeError,startsWith,time,toLower,trim] noreturn:[convertInto,emplace_back,erase,ok,runtimeError]
+operator== call:[strcmp]
+operator< call:[strcmp]
+operator<<
+operator+ call:[string] noreturn:[string]
+Config call:[empty,get,parse,parser,testSpec,trim] noreturn:[parse,testSpec,trim]
+getFilename
+listTests
+listTestNamesOnly
+listTags
+listReporters
+getProcessName
+getReporterName
+getTestsOrTags
+getSectionsToRun
+testSpec
+hasTestFilters
+showHelp
+allowThrows
+stream call:[stream] noreturn:[stream]
+name call:[empty]
+includeSuccessfulResults
+warnAboutMissingAssertions
+warnAboutNoTests
+showDurations
+minDuration
+runOrder
+rngSeed
+useColour
+shouldDebugBreak
+abortAfter
+showInvisibles
+verbosity
+benchmarkNoAnalysis
+benchmarkSamples
+benchmarkConfidenceInterval
+benchmarkResamples
+benchmarkWarmupTime call:[milliseconds] noreturn:[milliseconds]
+openStream call:[makeStream] noreturn:[makeStream]
+use
+instance
+use call:[ReusableStringStream,SourceLineInfo,setColour,str,throw_logic_error] noreturn:[throw_logic_error]
+instance
+setColour call:[getConfig,getCurrentContext,stream]
+useColourOnPlatform call:[isatty] noreturn:[isatty]
+platformColourInstance call:[getConfig,getCurrentContext,instance,useColour,useColourOnPlatform] noreturn:[instance]
+Colour call:[use] noreturn:[use]
+Colour
+operator=
+Colour call:[use] noreturn:[use]
+use call:[platformColourInstance,use] noreturn:[use]
+operator<<
+getResultCapture
+getRunner
+getConfig
+setResultCapture
+setRunner
+setConfig
+createContext call:[Context] noreturn:[Context]
+cleanUpContext
+rng
+writeToDebugConsole call:[cout]
+isDebuggerActive
+formatReconstructedExpression call:[find,size]
+throw_exception call:[cerr,terminate,what] noreturn:[terminate]
+throw_logic_error call:[logic_error,throw_exception] noreturn:[throw_exception]
+throw_domain_error call:[domain_error,throw_exception] noreturn:[throw_exception]
+throw_runtime_error call:[runtime_error,throw_exception] noreturn:[throw_exception]
+IMutableEnumValuesRegistry
+extractInstanceName call:[size,substr] noreturn:[substr]
+parseEnums call:[extractInstanceName,push_back,reserve,size,splitStringRef,trim] noreturn:[push_back]
+EnumInfo
+lookup
+makeEnumInfo call:[assert,emplace_back,enumInfo,parseEnums,reserve,size] noreturn:[emplace_back]
+registerEnum call:[back,makeEnumInfo,push_back] noreturn:[back]
+ErrnoGuard
+ErrnoGuard
+ExceptionTranslatorRegistry
+registerTranslator call:[push_back] noreturn:[push_back]
+translateActiveException call:[ReusableStringStream,SourceLineInfo,str,throw_logic_error] noreturn:[throw_logic_error]
+tryTranslators call:[ReusableStringStream,SourceLineInfo,str,throw_logic_error] noreturn:[throw_logic_error]
+reportFatal call:[getCurrentContext,getResultCapture,handleFatalErrorCondition] noreturn:[handleFatalErrorCondition]
+restorePreviousSignalHandlers call:[sigaction,sigaltstack,sizeof] noreturn:[sigaction,sigaltstack]
+handleSignal call:[raise,reportFatal,restorePreviousSignalHandlers] noreturn:[raise]
+FatalConditionHandler call:[assert,max] noreturn:[max]
+FatalConditionHandler
+engage_platform call:[sigaction,sigaltstack,sizeof] noreturn:[sigaction]
+disengage_platform call:[restorePreviousSignalHandlers] noreturn:[restorePreviousSignalHandlers]
+IGeneratorTracker
+what
+GeneratorUntypedBase
+acquireGeneratorTracker call:[acquireGeneratorTracker,getResultCapture] noreturn:[acquireGeneratorTracker]
+ReporterConfig
+ReporterConfig
+stream
+fullConfig
+TestRunInfo
+GroupInfo
+AssertionStats call:[builder,getMessage,getResultType,getSourceInfo,getTestMacroName,hasMessage,push_back,str] noreturn:[push_back]
+SectionStats
+TestCaseStats
+TestGroupStats
+TestGroupStats
+TestRunStats
+fatalErrorEncountered
+isMulti
+LeakDetector
+LeakDetector call:[cleanUp] noreturn:[cleanUp]
+listTests call:[Column,colourGuard,cout,empty,filterTests,getAllTestCasesSorted,hasTestFilters,indent,initialIndent,isHidden,pluralise,size,stringify,tagsAsString,testSpec,verbosity] noreturn:[size]
+listTestsNamesOnly call:[cout,filterTests,getAllTestCasesSorted,startsWith,testSpec,verbosity]
+add call:[insert] noreturn:[insert]
+all call:[reserve,size]
+listTags call:[Column,TagInfo,add,all,cout,end,filterTests,find,getAllTestCasesSorted,getTestCaseInfo,hasTestFilters,indent,initialIndent,insert,make_pair,pluralise,setw,size,str,testSpec,toLower,width] noreturn:[add,size]
+listReporters call:[Column,cout,getDescription,getFactories,getRegistryHub,getReporterRegistry,indent,initialIndent,size,width] noreturn:[size]
+list call:[getCurrentMutableContext,listReporters,listTags,listTestNamesOnly,listTests,listTestsNamesOnly,setConfig,valueOr] noreturn:[listReporters,listTags,listTests,listTestsNamesOnly]
+toString call:[describe,empty] noreturn:[describe]
+match call:[what]
+describe
+Message call:[ExceptionMessageMatcher] noreturn:[ExceptionMessageMatcher]
+to_string call:[to_string] noreturn:[to_string]
+convert call:[memcpy,sizeof,static_assert]
+convert call:[memcpy,sizeof,static_assert]
+nextafter call:[nextafterf] noreturn:[nextafterf]
+nextafter call:[nextafter] noreturn:[nextafter]
+step call:[nextafter] noreturn:[nextafter]
+marginComparison call:[return]
+write call:[setprecision]
+WithinAbsMatcher call:[ReusableStringStream,str,throw_domain_error,while] noreturn:[throw_domain_error,while]
+match call:[return]
+describe call:[stringify] noreturn:[stringify]
+WithinUlpsMatcher call:[ReusableStringStream,str,throw_domain_error,while] noreturn:[throw_domain_error,while]
+match call:[ReusableStringStream,SourceLineInfo,almostEqualUlps < double >,almostEqualUlps < float >,str,throw_logic_error] noreturn:[throw_logic_error]
+describe call:[step,str,write] noreturn:[str,write]
+WithinRelMatcher call:[ReusableStringStream,str,throw_domain_error,while] noreturn:[throw_domain_error,while]
+match call:[fabs,isinf,marginComparison] noreturn:[marginComparison]
+describe call:[str] noreturn:[str]
+WithinULP call:[WithinUlpsMatcher] noreturn:[WithinUlpsMatcher]
+WithinULP call:[WithinUlpsMatcher] noreturn:[WithinUlpsMatcher]
+WithinAbs call:[WithinAbsMatcher] noreturn:[WithinAbsMatcher]
+WithinRel call:[WithinRelMatcher] noreturn:[WithinRelMatcher]
+WithinRel call:[WithinRelMatcher,epsilon] noreturn:[WithinRelMatcher]
+WithinRel call:[WithinRelMatcher] noreturn:[WithinRelMatcher]
+WithinRel call:[WithinRelMatcher,epsilon] noreturn:[WithinRelMatcher]
+finalizeDescription call:[empty]
+CasedString
+adjustString call:[toLower]
+caseSensitivitySuffix call:[string] noreturn:[string]
+StringMatcherBase
+describe call:[caseSensitivitySuffix,reserve,size]
+EqualsMatcher
+match call:[adjustString]
+ContainsMatcher
+match call:[adjustString,contains] noreturn:[contains]
+StartsWithMatcher
+match call:[adjustString,startsWith] noreturn:[startsWith]
+EndsWithMatcher
+match call:[adjustString,endsWith] noreturn:[endsWith]
+RegexMatcher
+match call:[regex,regex_match] noreturn:[regex_match]
+describe call:[stringify]
+Equals call:[CasedString,EqualsMatcher] noreturn:[EqualsMatcher]
+Contains call:[CasedString,ContainsMatcher] noreturn:[ContainsMatcher]
+EndsWith call:[CasedString,EndsWithMatcher] noreturn:[EndsWithMatcher]
+StartsWith call:[CasedString,StartsWithMatcher] noreturn:[StartsWithMatcher]
+Matches call:[RegexMatcher] noreturn:[RegexMatcher]
+MessageInfo
+operator==
+operator<
+ScopedMessage call:[getResultCapture,pushScopedMessage,str] noreturn:[pushScopedMessage]
+ScopedMessage
+ScopedMessage call:[getResultCapture,popScopedMessage,uncaught_exceptions] noreturn:[popScopedMessage]
+Capturer call:[ReusableStringStream,SourceLineInfo,assert,back,emplace_back,empty,isspace,pop,push,size,skipq,str,substr,throw_logic_error,trimmed] noreturn:[substr,throw_logic_error]
+Capturer call:[assert,popScopedMessage,size,uncaught_exceptions] noreturn:[popScopedMessage]
+captureValue call:[assert,pushScopedMessage,size]
+RedirectedStream call:[rdbuf] noreturn:[rdbuf]
+RedirectedStream call:[rdbuf] noreturn:[rdbuf]
+RedirectedStdOut
+str call:[str] noreturn:[str]
+RedirectedStdErr
+str call:[str] noreturn:[str]
+RedirectedStreams
+RedirectedStreams call:[str] noreturn:[str]
+isnan call:[isnan] noreturn:[isnan]
+isnan call:[isnan] noreturn:[isnan]
+rotate_right call:[return]
+SimplePcg32 call:[seed] noreturn:[seed]
+seed call:[operator()] noreturn:[operator()]
+discard call:[operator()]
+operator() call:[rotate_right]
+operator==
+operator!=
+getReporterRegistry
+getTestCaseRegistry
+getExceptionTranslatorRegistry
+getTagAliasRegistry
+getStartupExceptionRegistry
+registerReporter call:[registerReporter] noreturn:[registerReporter]
+registerListener call:[registerListener] noreturn:[registerListener]
+registerTest call:[registerTest] noreturn:[registerTest]
+registerTranslator call:[registerTranslator] noreturn:[registerTranslator]
+registerTagAlias call:[add] noreturn:[add]
+registerStartupException call:[ReusableStringStream,SourceLineInfo,str,throw_logic_error] noreturn:[throw_logic_error]
+getMutableEnumValuesRegistry
+getRegistryHub call:[get] noreturn:[get]
+getMutableRegistryHub call:[getMutable] noreturn:[getMutable]
+cleanUp call:[cleanUpContext,cleanupSingletons] noreturn:[cleanUpContext]
+translateActiveException call:[getExceptionTranslatorRegistry,getRegistryHub,translateActiveException] noreturn:[translateActiveException]
+create call:[ReporterConfig,create,end,find] noreturn:[create]
+registerReporter call:[emplace] noreturn:[emplace]
+registerListener call:[push_back] noreturn:[push_back]
+getFactories
+getListeners
+isOk call:[return]
+isJustInfo
+operator|
+shouldContinueOnFailure call:[return]
+shouldSuppressFailure call:[return]
+GeneratorTracker
+acquire call:[addChild,assert,currentTracker,findChild,isComplete,isGeneratorTracker,nameAndLocation,open,parent] noreturn:[addChild,open]
+isGeneratorTracker
+close call:[assert,begin,clear,close,empty,end,find,find_if,getFilters,hasStarted,isSectionTracker,next,parent,trimmedName] noreturn:[hasStarted]
+setGenerator call:[move] noreturn:[move]
+GeneratorTracker
+RunContext call:[setConfig,setResultCapture,setRunner,testRunStarting] noreturn:[testRunStarting]
+RunContext call:[TestRunStats,aborting,testRunEnded] noreturn:[testRunEnded]
+testGroupStarting call:[GroupInfo,testGroupStarting] noreturn:[testGroupStarting]
+testGroupEnded call:[GroupInfo,TestGroupStats,aborting,testGroupEnded] noreturn:[testGroupEnded]
+runTest call:[NameAndLocation,TestCaseStats,aborting,acquire,addInitialFilters,assert,delta,expectedToFail,getSectionsToRun,getTestCaseInfo,isSectionTracker,isSuccessfullyCompleted,runCurrentTest,startCycle,startRun,testCaseEnded,testCaseStarting,while] noreturn:[runCurrentTest]
+config
+reporter
+assertionEnded call:[AssertionStats,assertionEnded,clear,getResultType,getTestCaseInfo,isOk,okToFail,resetAssertionInfo] noreturn:[clear]
+resetAssertionInfo call:[StringRef,operator""_sr] noreturn:[operator""_sr]
+sectionStarted call:[NameAndLocation,acquire,isOpen,push_back,sectionStarting]
+testForMissingAssertions call:[currentTracker,hasChildren,total,warnAboutMissingAssertions]
+sectionEnded call:[SectionStats,back,clear,close,empty,pop_back,sectionEnded,testForMissingAssertions] noreturn:[clear,pop_back]
+sectionEndedEarly call:[back,close,empty,fail,pop_back,push_back] noreturn:[close,fail,push_back]
+pushScopedMessage call:[push_back] noreturn:[push_back]
+popScopedMessage call:[begin,end,erase,remove] noreturn:[erase]
+emplaceUnscopedMessage call:[emplace_back] noreturn:[emplace_back]
+getCurrentTestName call:[getTestCaseInfo,string] noreturn:[string]
+getLastResult
+exceptionEarlyReported
+handleFatalErrorCondition call:[TestCaseStats,TestRunStats,assertionEnded,fatalErrorEncountered,getTestCaseInfo,handleUnfinishedSections,result,sectionEnded,string,tempResult,testCaseEnded,testCaseSection,testCaseSectionStats,testGroupEnded,testRunEnded] noreturn:[testRunEnded]
+lastAssertionPassed
+assertionPassed call:[clear,resetAssertionInfo] noreturn:[clear]
+aborting call:[abortAfter]
+runCurrentTest call:[StringRef,clear,close,getElapsedSeconds,getPreferences,getTestCaseInfo,handleUnexpectedInflightException,handleUnfinishedSections,invokeActiveTestCase,redirectedStreams,sectionEnded,sectionStarting,seedRng,start,testCaseSection,testCaseSectionStats,testForMissingAssertions,translateActiveException] noreturn:[getElapsedSeconds,handleUnexpectedInflightException,invokeActiveTestCase,sectionEnded]
+invokeActiveTestCase call:[_,invoke] noreturn:[invoke]
+handleUnfinishedSections call:[clear,rbegin,rend,sectionEnded] noreturn:[clear,sectionEnded]
+handleExpr call:[assertionPassed,assertionStarting,getResult,isFalseTest,populateReaction,reportExpr] noreturn:[assertionPassed,populateReaction,reportExpr]
+reportExpr call:[LazyExpression,assertionEnded,data] noreturn:[assertionEnded]
+handleMessage call:[LazyExpression,assertionEnded,assertionStarting,data,isOk,populateReaction] noreturn:[populateReaction]
+handleUnexpectedExceptionNotThrown call:[handleNonExpr] noreturn:[handleNonExpr]
+handleUnexpectedInflightException call:[LazyExpression,assertionEnded,data,populateReaction] noreturn:[populateReaction]
+populateReaction call:[aborting,shouldDebugBreak]
+handleIncomplete call:[LazyExpression,assertionEnded,data] noreturn:[assertionEnded]
+handleNonExpr call:[LazyExpression,assertionEnded,data,isOk,populateReaction] noreturn:[populateReaction]
+getResultCapture call:[ReusableStringStream,SourceLineInfo,getCurrentContext,getResultCapture,str,throw_logic_error] noreturn:[throw_logic_error]
+seedRng call:[rng,rngSeed,seed,srand] noreturn:[seed]
+rngSeed call:[getConfig,getCurrentContext,rngSeed] noreturn:[rngSeed]
+Section call:[start] noreturn:[start]
+Section call:[getElapsedSeconds,getResultCapture,sectionEnded,sectionEndedEarly,uncaught_exceptions] noreturn:[sectionEnded,sectionEndedEarly]
+operatorbool
+SectionInfo
+run call:[applyCommandLine,run] noreturn:[run]
+createReporter call:[ReusableStringStream,create,getRegistryHub,getReporterRegistry,str,throw_domain_error,while] noreturn:[throw_domain_error]
+makeReporter call:[ReporterConfig,addListener,addReporter,create,createReporter,empty,getListeners,getRegistryHub,getReporterName,getReporterRegistry] noreturn:[addListener,createReporter]
+TestGroup call:[begin,emplace,empty,end,getAllTestCasesSorted,getInvalidArgs,insert,isHidden,matchesByFilter,testSpec] noreturn:[emplace,insert]
+execute call:[aborting,empty,getInvalidArgs,name,noMatchingTestCases,reportInvalidArguments,reporter,runTest,skipTest,testGroupEnded,testGroupStarting,testSpec] noreturn:[reportInvalidArguments,runTest,skipTest]
+applyFilenamesAsTags call:[erase,find_last_of,getAllTestCasesSorted,move,push_back,setTags] noreturn:[erase,setTags]
+Session call:[ReusableStringStream,SourceLineInfo,getMutableRegistryHub,makeCommandLineParser,registerStartupException,str,throw_logic_error] noreturn:[makeCommandLineParser,registerStartupException,throw_logic_error]
+Session call:[cleanUp] noreturn:[cleanUp]
+showHelp call:[cout,libraryVersion]
+libIdentify call:[cout,libraryVersion,setw]
+applyCommandLine call:[Args,Colour,Column,cerr,config,errorMessage,getCurrentMutableContext,indent,libIdentify,parse,reset,setConfig,showHelp] noreturn:[libIdentify,showHelp]
+useConfigData call:[reset] noreturn:[reset]
+run call:[cout,getchar,runInternal]
+cli
+cli
+configData
+config
+runInternal call:[applyFilenamesAsTags,config,execute,list,return,seedRng,warnAboutNoTests] noreturn:[applyFilenamesAsTags]
+getSingletons
+ISingleton
+addSingleton call:[getSingletons,push_back] noreturn:[push_back]
+cleanupSingletons call:[getSingletons]
+operator() call:[writeToDebugConsole] noreturn:[writeToDebugConsole]
+FileStream call:[ReusableStringStream,c_str,fail,open,str,throw_domain_error,while] noreturn:[throw_domain_error,while]
+stream
+CoutStream
+stream
+DebugOutStream
+stream
+makeStream call:[CoutStream,DebugOutStream,FileStream,ReusableStringStream,empty,str,throw_domain_error] noreturn:[CoutStream,DebugOutStream,FileStream,throw_domain_error]
+add call:[back,empty,pop_back,push_back,size]
+release call:[copyfmt,push_back] noreturn:[push_back]
+ReusableStringStream
+ReusableStringStream call:[clear,getMutable,release,str] noreturn:[release]
+str call:[str] noreturn:[str]
+cout
+cerr
+clog
+toLowerCh call:[tolower]
+startsWith call:[begin,end,equal,size] noreturn:[equal]
+startsWith call:[empty]
+endsWith call:[equal,rbegin,rend,size] noreturn:[equal]
+endsWith call:[empty,size]
+contains call:[find]
+toLowerInPlace call:[begin,end,transform] noreturn:[transform]
+toLower call:[toLowerInPlace]
+trim call:[find_first_not_of,find_last_not_of,string,substr] noreturn:[string]
+trim call:[is_ws,size,substr] noreturn:[substr]
+replaceInPlace call:[find,size,substr] noreturn:[find]
+splitStringRef call:[push_back,size,substr] noreturn:[push_back]
+pluralise
+operator<<
+StringRef
+c_str call:[ReusableStringStream,isNullTerminated,str,throw_domain_error,while] noreturn:[throw_domain_error]
+data
+substr call:[StringRef] noreturn:[StringRef]
+operator== call:[memcmp]
+operator<< call:[data,size,write] noreturn:[write]
+operator+= call:[append,data,size]
+TagAlias
+RegistrarForTagAliases call:[getMutableRegistryHub,registerStartupException,registerTagAlias] noreturn:[registerStartupException,registerTagAlias]
+TagAliasRegistry
+find call:[end,find]
+expandAliases call:[find,size,substr] noreturn:[substr]
+add call:[ReusableStringStream,TagAlias,endsWith,find,insert,make_pair,startsWith,str,throw_domain_error,while] noreturn:[throw_domain_error,while]
+ITagAliasRegistry
+get call:[getRegistryHub,getTagAliasRegistry] noreturn:[getTagAliasRegistry]
+parseSpecialTag call:[startsWith]
+isReservedTag call:[isalnum,parseSpecialTag,size] noreturn:[isalnum]
+enforceNotReservedTag call:[ReusableStringStream,isReservedTag,str,throw_domain_error,while] noreturn:[throw_domain_error,while]
+makeTestCase call:[TestCase,clear,end,enforceNotReservedTag,erase,info,insert,move,parseSpecialTag,push_back,size,startsWith] noreturn:[TestCase,enforceNotReservedTag,erase,insert]
+setTags call:[begin,clear,end,erase,move,parseSpecialTag,push_back,sort,toLower,unique] noreturn:[move,push_back]
+TestCaseInfo call:[setTags] noreturn:[setTags]
+isHidden call:[return]
+throws call:[return]
+okToFail call:[return]
+expectedToFail call:[return]
+tagsAsString call:[append,push_back,reserve,size] noreturn:[push_back,size]
+TestCase
+withName call:[other]
+invoke call:[invoke] noreturn:[invoke]
+operator== call:[get]
+operator<
+getTestCaseInfo
+TestHasher
+operator()
+sortTests call:[begin,emplace_back,end,operator(),reserve,rngSeed,runOrder,seedRng,size,sort] noreturn:[emplace_back]
+isThrowSafe call:[allowThrows,throws] noreturn:[allowThrows]
+matchTest call:[isThrowSafe,matches] noreturn:[isThrowSafe]
+enforceNoDuplicateTestCases call:[ReusableStringStream,getTestCaseInfo,insert,str,throw_domain_error,while] noreturn:[throw_domain_error,while]
+filterTests call:[hasFilters,isHidden,matchTest,push_back,reserve,size] noreturn:[push_back]
+getAllTestCasesSorted call:[getAllTestsSorted,getRegistryHub,getTestCaseRegistry] noreturn:[getAllTestsSorted]
+registerTest call:[empty,getTestCaseInfo,push_back,registerTest,str,withName] noreturn:[push_back,registerTest]
+getAllTests
+getAllTestsSorted call:[empty,enforceNoDuplicateTestCases,runOrder,sortTests] noreturn:[enforceNoDuplicateTestCases,runOrder]
+TestInvokerAsFunction
+invoke call:[m_testAsFunction] noreturn:[m_testAsFunction]
+extractClassName call:[className,rfind,startsWith,substr] noreturn:[substr]
+NameAndLocation
+startRun call:[NameAndLocation,SourceLineInfo]
+currentTracker
+TrackerBase
+isComplete
+isSuccessfullyCompleted
+isOpen call:[isComplete] noreturn:[isComplete]
+hasChildren call:[empty] noreturn:[empty]
+addChild call:[push_back] noreturn:[push_back]
+findChild call:[begin,end,find_if,nameAndLocation,return]
+parent call:[assert]
+openChild call:[openChild] noreturn:[openChild]
+isSectionTracker
+isGeneratorTracker
+open call:[moveToThis,openChild] noreturn:[openChild]
+close call:[ReusableStringStream,SourceLineInfo,all_of,begin,close,completeCycle,currentTracker,end,isComplete,moveToParent,str,throw_logic_error] noreturn:[close,completeCycle,isComplete,throw_logic_error]
+fail call:[completeCycle,markAsNeedingAnotherRun,moveToParent] noreturn:[completeCycle,markAsNeedingAnotherRun]
+markAsNeedingAnotherRun
+moveToParent call:[assert,setCurrentTracker] noreturn:[setCurrentTracker]
+moveToThis call:[setCurrentTracker] noreturn:[setCurrentTracker]
+acquire call:[addChild,assert,completedCycle,currentTracker,findChild,isSectionTracker,tryOpen] noreturn:[addChild,tryOpen]
+getFilters
+trimmedName
+makeTestInvoker call:[TestInvokerAsFunction,new] noreturn:[TestInvokerAsFunction]
+NameAndTags
+AutoReg call:[extractClassName,getMutableRegistryHub,makeTestCase,registerStartupException,registerTest] noreturn:[registerStartupException,registerTest]
+Pattern
+name
+NamePattern
+matches call:[matches] noreturn:[matches]
+TagPattern
+matches call:[begin,end,find] noreturn:[end]
+ExcludedPattern
+matches call:[matches] noreturn:[matches]
+matches call:[all_of,begin,end,matches] noreturn:[all_of,matches]
+name call:[name] noreturn:[name]
+hasFilters call:[empty] noreturn:[empty]
+matches call:[any_of,begin,end,matches] noreturn:[any_of,matches]
+matchesByFilter call:[begin,emplace_back,end,isThrowSafe,matches,name,size,transform] noreturn:[emplace_back]
+getInvalidArgs call:[return] noreturn:[return]
+TestSpecParser
+parse call:[clear,endMode,expandAliases,push_back,reserve,size,visitChar]
+testSpec call:[addFilter]
+visitChar call:[addCharToPattern,endMode,escape,isControlChar,processNameChar,processNoneChar,processOtherChar,separate] noreturn:[separate]
+processNoneChar call:[startNewMode]
+processNameChar call:[endMode,startNewMode] noreturn:[endMode,startNewMode]
+processOtherChar call:[endMode,isControlChar]
+startNewMode
+endMode call:[addNamePattern,addTagPattern,revertBackToLastMode,startNewMode] noreturn:[startNewMode]
+escape call:[push_back,saveLastMode] noreturn:[push_back]
+isControlChar
+addFilter call:[Filter,empty,push_back] noreturn:[Filter]
+saveLastMode
+revertBackToLastMode
+separate call:[addFilter,clear,endMode,size]
+preprocessPattern call:[clear,size,startsWith,substr] noreturn:[substr]
+addNamePattern call:[clear,empty,preprocessPattern,push_back] noreturn:[push_back]
+addTagPattern call:[begin,clear,empty,erase,preprocessPattern,push_back,size] noreturn:[push_back]
+parseTestSpec call:[TestSpecParser,get,parse,testSpec] noreturn:[testSpec]
+getCurrentNanosecondsSinceEpoch call:[count,now,time_since_epoch] noreturn:[count]
+estimateClockResolution global:[nanosecondsInSecond] call:[getCurrentNanosecondsSinceEpoch,while] noreturn:[getCurrentNanosecondsSinceEpoch]
+getEstimatedClockResolution call:[estimateClockResolution]
+start call:[getCurrentNanosecondsSinceEpoch] noreturn:[getCurrentNanosecondsSinceEpoch]
+getElapsedNanoseconds call:[getCurrentNanosecondsSinceEpoch]
+getElapsedMicroseconds call:[getElapsedNanoseconds]
+getElapsedMilliseconds call:[getElapsedMicroseconds]
+getElapsedSeconds call:[getElapsedMicroseconds]
+which
+rawMemoryToString call:[setfill,setw,str,which] noreturn:[str]
+fpToString call:[find_last_not_of,isnan,setprecision,size,str,substr] noreturn:[substr]
+symbol
+symbol
+symbol
+symbol
+symbol
+symbol
+operator-
+operator+=
+total
+allPassed
+allOk
+operator-
+operator+=
+delta
+uncaught_exceptions
+Version
+operator<<
+libraryVersion call:[version]
+WildcardPattern call:[endsWith,size,startsWith,substr]
+matches call:[ReusableStringStream,SourceLineInfo,contains,endsWith,normaliseString,startsWith,str,throw_logic_error] noreturn:[throw_logic_error]
+normaliseString call:[toLower,trim] noreturn:[trim]
+trailingBytes call:[ReusableStringStream,SourceLineInfo,str,throw_logic_error] noreturn:[throw_logic_error]
+headerValue call:[ReusableStringStream,SourceLineInfo,str,throw_logic_error] noreturn:[throw_logic_error]
+hexEscapeChar call:[f,flags,setfill,setw] noreturn:[flags]
+shouldNewline
+shouldIndent
+operator|
+operator&
+XmlEncode
+encodeTo call:[headerValue,hexEscapeChar,size,trailingBytes]
+operator<< call:[encodeTo]
+ScopedElement
+ScopedElement
+operator= call:[endElement] noreturn:[endElement]
+ScopedElement call:[endElement] noreturn:[endElement]
+writeText call:[writeText]
+XmlWriter call:[writeDeclaration] noreturn:[writeDeclaration]
+XmlWriter call:[empty,endElement,newlineIfNecessary] noreturn:[endElement,newlineIfNecessary]
+startElement call:[applyFormatting,ensureTagClosed,newlineIfNecessary,push_back,shouldIndent]
+scopedElement call:[scoped,startElement]
+endElement call:[applyFormatting,back,newlineIfNecessary,pop_back,shouldIndent,size,substr]
+writeAttribute call:[XmlEncode,empty]
+writeAttribute
+writeText call:[XmlEncode,applyFormatting,empty,ensureTagClosed,shouldIndent] noreturn:[applyFormatting]
+writeComment call:[applyFormatting,ensureTagClosed,shouldIndent]
+writeStylesheetRef
+writeBlankLine call:[ensureTagClosed]
+ensureTagClosed call:[newlineIfNecessary]
+applyFormatting call:[shouldNewline] noreturn:[shouldNewline]
+writeDeclaration
+newlineIfNecessary
+prepareExpandedExpression call:[getExpandedExpression] noreturn:[getExpandedExpression]
+getFormattedDuration call:[sprintf,string] noreturn:[string]
+shouldShowDuration call:[minDuration,showDurations]
+serializeFilters call:[str] noreturn:[str]
+TestEventListenerBase
+getSupportedVerbosities
+assertionStarting
+assertionEnded
+failedString
+passedString
+dimColour
+bothOrAll call:[string]
+printTotals call:[bothOrAll,colour,pluralise,string,total]
+AssertionPrinter
+print call:[begin,failedString,getResultType,hasExpression,isOk,passedString,printExpressionWas,printIssue,printMessage,printOriginalExpression,printReconstructedExpression,printRemainingMessages,printResultType,printSourceInfo,string] noreturn:[printRemainingMessages,printResultType]
+printSourceInfo call:[colourGuard,getSourceInfo]
+printResultType call:[colourGuard,empty]
+printIssue
+printExpressionWas call:[colour,dimColour,hasExpression,printOriginalExpression] noreturn:[printOriginalExpression]
+printOriginalExpression call:[getExpression,hasExpression] noreturn:[getExpression]
+printReconstructedExpression call:[colour,dimColour,getExpandedExpression,hasExpandedExpression] noreturn:[getExpandedExpression]
+printMessage call:[end]
+printRemainingMessages call:[cend,colourGuard,dimColour,distance,end,pluralise,printMessage]
+getDescription
+noMatchingTestCases
+assertionStarting
+assertionEnded call:[getResultType,includeSuccessfulResults,isOk,print,printer]
+sectionEnded call:[getFormattedDuration,shouldShowDuration]
+testRunEnded call:[printTotals,testRunEnded] noreturn:[testRunEnded]
+CompactReporter
+ConsoleAssertionPrinter call:[getResultType,isOk,size]
+print call:[printMessage,printOriginalExpression,printReconstructedExpression,printResultType,printSourceInfo,total] noreturn:[printMessage,printReconstructedExpression]
+printResultType call:[colourGuard,empty]
+printOriginalExpression call:[colourGuard,getExpressionInMacro,hasExpression]
+printReconstructedExpression call:[Column,colourGuard,getExpandedExpression,hasExpandedExpression,indent]
+printMessage call:[Column,empty,indent]
+printSourceInfo call:[colourGuard,getSourceInfo]
+makeRatio call:[return]
+findMax
+Duration
+value
+unitsAsString
+operator<< call:[unitsAsString,value] noreturn:[unitsAsString]
+TablePrinter
+columnInfos
+open call:[Column,RowBreak,getLineOfChars < '-' >,spacer,width]
+close call:[RowBreak]
+operator<<
+operator<< call:[open,size,str,string]
+operator<<
+ConsoleReporter
+getDescription
+noMatchingTestCases
+reportInvalidArguments
+assertionStarting
+assertionEnded call:[getResultType,includeSuccessfulResults,isOk,lazyPrint,print,printer]
+sectionStarting call:[close,sectionStarting] noreturn:[sectionStarting]
+sectionEnded call:[close,colour,getFormattedDuration,lazyPrint,sectionEnded,shouldShowDuration,size] noreturn:[sectionEnded]
+testCaseEnded call:[close,testCaseEnded]
+testGroupEnded call:[printSummaryDivider,printTotals,testGroupEnded] noreturn:[testGroupEnded]
+testRunEnded call:[printTotals,printTotalsDivider,testRunEnded] noreturn:[testRunEnded]
+testRunStarting call:[printTestFilters,testRunStarting] noreturn:[printTestFilters]
+lazyPrint call:[close,lazyPrintWithoutClosingBenchmarkTable] noreturn:[lazyPrintWithoutClosingBenchmarkTable]
+lazyPrintWithoutClosingBenchmarkTable call:[lazyPrintGroupInfo,lazyPrintRunInfo,printTestCaseAndSectionHeader] noreturn:[lazyPrintGroupInfo,lazyPrintRunInfo]
+lazyPrintRunInfo call:[colour,getLineOfChars < '~' >,libraryVersion,rngSeed]
+lazyPrintGroupInfo call:[empty,printClosedHeader]
+printTestCaseAndSectionHeader call:[assert,back,begin,colourGuard,empty,end,getLineOfChars < '-' >,getLineOfChars < '.' >,printHeaderString,printOpenHeader,size] noreturn:[printHeaderString]
+printClosedHeader call:[getLineOfChars < '.' >,printOpenHeader]
+printOpenHeader call:[colourGuard,getLineOfChars < '-' >,printHeaderString] noreturn:[printHeaderString]
+printHeaderString call:[Column,find,indent,initialIndent]
+SummaryColumn
+addRow call:[push_back,size,str]
+printTotals call:[Colour,SummaryColumn,addRow,allPassed,pluralise,printSummaryRow,push_back,total] noreturn:[printSummaryRow]
+printSummaryRow call:[Colour,empty]
+printTotalsDivider call:[Colour,allPassed,findMax,makeRatio,string,total] noreturn:[string]
+printSummaryDivider call:[getLineOfChars < '-' >]
+printTestFilters call:[getTestsOrTags,guard,hasFilters,serializeFilters,testSpec]
+getCurrentTimestamp call:[gmtime,sizeof,strftime,string,time] noreturn:[string]
+fileNameTag call:[begin,end,find_if,front,string,substr] noreturn:[string,substr]
+formatDuration call:[setprecision,str] noreturn:[str]
+JunitReporter
+JunitReporter
+getDescription
+noMatchingTestCases
+testRunStarting call:[startElement,testRunStarting] noreturn:[startElement]
+testGroupStarting call:[clear,start,testGroupStarting] noreturn:[testGroupStarting]
+testCaseStarting call:[okToFail] noreturn:[okToFail]
+assertionEnded call:[assertionEnded,getResultType] noreturn:[assertionEnded]
+testCaseEnded call:[testCaseEnded] noreturn:[testCaseEnded]
+testGroupEnded call:[back,getElapsedSeconds,testGroupEnded,writeGroup] noreturn:[writeGroup]
+testRunEndedCumulative call:[endElement] noreturn:[endElement]
+writeGroup call:[formatDuration,getCurrentTimestamp,getTestsOrTags,hasTestFilters,rngSeed,scopedElement,serializeFilters,showDurations,total,trim,writeAttribute,writeTestCase,writeText] noreturn:[writeAttribute,writeTestCase,writeText]
+writeTestCase call:[assert,empty,fileNameTag,front,name,okToFail,size,writeSection] noreturn:[writeSection]
+writeSection call:[empty,formatDuration,scopedElement,trim,writeAssertions,writeAttribute,writeSection,writeText] noreturn:[writeAttribute,writeSection,writeText]
+writeAssertions call:[writeAssertion] noreturn:[writeAssertion]
+writeAssertion call:[Column,empty,getExpandedExpression,getExpression,getExpressionInMacro,getMessage,getResultType,getSourceInfo,getTestMacroName,hasExpandedExpression,hasExpression,indent,isOk,scopedElement,str,total,writeAttribute,writeText] noreturn:[writeText]
+ListeningReporter
+addListener call:[move,push_back] noreturn:[push_back]
+addReporter call:[assert,getPreferences,move]
+getPreferences
+getSupportedVerbosities
+noMatchingTestCases call:[noMatchingTestCases] noreturn:[noMatchingTestCases]
+reportInvalidArguments call:[reportInvalidArguments] noreturn:[reportInvalidArguments]
+testRunStarting call:[testRunStarting] noreturn:[testRunStarting]
+testGroupStarting call:[testGroupStarting] noreturn:[testGroupStarting]
+testCaseStarting call:[testCaseStarting] noreturn:[testCaseStarting]
+sectionStarting call:[sectionStarting] noreturn:[sectionStarting]
+assertionStarting call:[assertionStarting] noreturn:[assertionStarting]
+assertionEnded call:[assertionEnded] noreturn:[assertionEnded]
+sectionEnded call:[sectionEnded] noreturn:[sectionEnded]
+testCaseEnded call:[testCaseEnded] noreturn:[testCaseEnded]
+testGroupEnded call:[testGroupEnded] noreturn:[testGroupEnded]
+testRunEnded call:[testRunEnded] noreturn:[testRunEnded]
+skipTest call:[skipTest] noreturn:[skipTest]
+isMulti
+XmlReporter
+getDescription
+getStylesheetRef call:[string] noreturn:[string]
+writeSourceInfo call:[writeAttribute] noreturn:[writeAttribute]
+noMatchingTestCases call:[noMatchingTestCases] noreturn:[noMatchingTestCases]
+testRunStarting call:[empty,getStylesheetRef,getTestsOrTags,hasFilters,name,rngSeed,scopedElement,serializeFilters,startElement,testRunStarting,testSpec,writeAttribute,writeStylesheetRef] noreturn:[writeAttribute,writeStylesheetRef]
+testGroupStarting call:[startElement,testGroupStarting,writeAttribute] noreturn:[writeAttribute]
+testCaseStarting call:[ensureTagClosed,showDurations,start,startElement,tagsAsString,testCaseStarting,trim,writeAttribute,writeSourceInfo] noreturn:[ensureTagClosed,start]
+sectionStarting call:[ensureTagClosed,sectionStarting,startElement,trim,writeAttribute,writeSourceInfo] noreturn:[ensureTagClosed]
+assertionStarting
+assertionEnded call:[endElement,getExpandedExpression,getExpression,getMessage,getResultType,getSourceInfo,getTestMacroName,hasExpression,includeSuccessfulResults,isOk,scopedElement,startElement,succeeded,writeAttribute,writeSourceInfo,writeText] noreturn:[endElement,writeText]
+sectionEnded call:[endElement,scopedElement,sectionEnded,showDurations,writeAttribute] noreturn:[endElement,writeAttribute]
+testCaseEnded call:[allOk,empty,endElement,getElapsedSeconds,scopedElement,showDurations,testCaseEnded,trim,writeAttribute,writeText] noreturn:[endElement,writeAttribute,writeText]
+testGroupEnded call:[endElement,scopedElement,testGroupEnded,writeAttribute] noreturn:[endElement]
+testRunEnded call:[endElement,scopedElement,testRunEnded,writeAttribute] noreturn:[endElement]
+main call:[Session,a,run] noreturn:[run]
+StreamBufImpl < OutputDebugWriter , 256 > call:[setp,sizeof] noreturn:[setp]
+StreamBufImpl < OutputDebugWriter , 256 > call:[sync] noreturn:[sync]
+overflow call:[epptr,operator(),pbase,sputc,string,sync] noreturn:[operator(),sputc]
+sync call:[epptr,operator(),pbase,pptr,setp,string] noreturn:[setp]
+getInternal call:[addSingleton] noreturn:[addSingleton]
+get call:[getInternal] noreturn:[getInternal]
+getMutable call:[getInternal] noreturn:[getInternal]
+ParserRefImpl < Arg >
+ParserRefImpl < Arg >
+ParserRefImpl < Arg >
+operator()
+optional
+required
+isOptional
+hint
+ParserRefImpl < Opt >
+ParserRefImpl < Opt >
+ParserRefImpl < Opt >
+operator()
+optional
+required
+isOptional
+hint
+operator| call:[Parser]
+BoundValueRef < std :: string >
+BasicResult < ParseResultType > call:[assert,type] noreturn:[assert]
+ok
+ok
+logicError
+runtimeError
+operatorbool
+type
+errorMessage
+enforceOk call:[abort,assert] noreturn:[abort]
+BasicResult < ParseResultType > call:[assert] noreturn:[assert]
+BasicResult < void > call:[assert,type] noreturn:[assert]
+ok
+ok
+logicError
+runtimeError
+operatorbool
+type
+errorMessage
+enforceOk call:[abort,assert] noreturn:[abort]
+BasicResult < void > call:[assert] noreturn:[assert]
+BasicResult < ParseState > call:[assert,type] noreturn:[assert]
+ok
+ok
+logicError
+runtimeError
+operatorbool
+type
+errorMessage
+enforceOk call:[abort,assert] noreturn:[abort]
+BasicResult < ParseState > call:[assert] noreturn:[assert]
+create call:[CompactReporter]
+getDescription call:[getDescription] noreturn:[getDescription]
+ReporterRegistrar < CompactReporter > call:[getMutableRegistryHub,registerReporter] noreturn:[registerReporter]
+create call:[ConsoleReporter]
+getDescription call:[getDescription] noreturn:[getDescription]
+ReporterRegistrar < ConsoleReporter > call:[getMutableRegistryHub,registerReporter] noreturn:[registerReporter]
+create call:[JunitReporter]
+getDescription call:[getDescription] noreturn:[getDescription]
+ReporterRegistrar < JunitReporter > call:[getMutableRegistryHub,registerReporter] noreturn:[registerReporter]
+create call:[XmlReporter]
+getDescription call:[getDescription] noreturn:[getDescription]
+ReporterRegistrar < XmlReporter > call:[getMutableRegistryHub,registerReporter] noreturn:[registerReporter]
+getLineOfChars < '-' > call:[memset]
+getLineOfChars < '~' > call:[memset]
+getLineOfChars < '.' > call:[memset]
+SectionNode
+operator==
+operator== call:[operator==] noreturn:[operator==]
+BySectionInfo
+BySectionInfo
+operator() call:[return] noreturn:[return]
+CumulativeReporterBase < JunitReporter > call:[ReusableStringStream,count,getSupportedVerbosities,str,throw_domain_error,verbosity] noreturn:[throw_domain_error]
+getPreferences
+getSupportedVerbosities
+testRunStarting
+testGroupStarting
+testCaseStarting
+sectionStarting call:[BySectionInfo,Counts,back,begin,empty,end,find_if,incompleteStats,move,push_back] noreturn:[move,push_back]
+assertionStarting
+assertionEnded call:[assert,back,empty,prepareExpandedExpression,push_back]
+sectionEnded call:[assert,back,empty,pop_back] noreturn:[pop_back]
+testCaseEnded call:[assert,push_back,reset,size]
+testGroupEnded call:[push_back,swap] noreturn:[push_back]
+testRunEnded call:[push_back,swap,testRunEndedCumulative] noreturn:[testRunEndedCumulative]
+skipTest
+StreamingReporterBase < TestEventListenerBase > call:[ReusableStringStream,count,getSupportedVerbosities,str,throw_domain_error,verbosity] noreturn:[throw_domain_error]
+getPreferences
+getSupportedVerbosities
+noMatchingTestCases
+reportInvalidArguments
+testRunStarting
+testGroupStarting
+testCaseStarting
+sectionStarting call:[push_back] noreturn:[push_back]
+sectionEnded call:[pop_back] noreturn:[pop_back]
+testCaseEnded call:[reset] noreturn:[reset]
+testGroupEnded call:[reset] noreturn:[reset]
+testRunEnded call:[reset] noreturn:[reset]
+skipTest
+StreamingReporterBase < CompactReporter > call:[ReusableStringStream,count,getSupportedVerbosities,str,throw_domain_error,verbosity] noreturn:[throw_domain_error]
+getPreferences
+getSupportedVerbosities
+noMatchingTestCases
+reportInvalidArguments
+testRunStarting
+testGroupStarting
+testCaseStarting
+sectionStarting call:[push_back] noreturn:[push_back]
+sectionEnded call:[pop_back] noreturn:[pop_back]
+testCaseEnded call:[reset] noreturn:[reset]
+testGroupEnded call:[reset] noreturn:[reset]
+testRunEnded call:[reset] noreturn:[reset]
+skipTest
+StreamingReporterBase < ConsoleReporter > call:[ReusableStringStream,count,getSupportedVerbosities,str,throw_domain_error,verbosity] noreturn:[throw_domain_error]
+getPreferences
+getSupportedVerbosities
+noMatchingTestCases
+reportInvalidArguments
+testRunStarting
+testGroupStarting
+testCaseStarting
+sectionStarting call:[push_back] noreturn:[push_back]
+sectionEnded call:[pop_back] noreturn:[pop_back]
+testCaseEnded call:[reset] noreturn:[reset]
+testGroupEnded call:[reset] noreturn:[reset]
+testRunEnded call:[reset] noreturn:[reset]
+skipTest
+StreamingReporterBase < XmlReporter > call:[ReusableStringStream,count,getSupportedVerbosities,str,throw_domain_error,verbosity] noreturn:[throw_domain_error]
+getPreferences
+getSupportedVerbosities
+noMatchingTestCases
+reportInvalidArguments
+testRunStarting
+testGroupStarting
+testCaseStarting
+sectionStarting call:[push_back] noreturn:[push_back]
+sectionEnded call:[pop_back] noreturn:[pop_back]
+testCaseEnded call:[reset] noreturn:[reset]
+testGroupEnded call:[reset] noreturn:[reset]
+testRunEnded call:[reset] noreturn:[reset]
+skipTest
+Option < AssertionResult >
+Option < AssertionResult >
+Option < AssertionResult >
+Option < AssertionResult > call:[reset] noreturn:[reset]
+operator= call:[AssertionResult,new,reset] noreturn:[AssertionResult]
+operator= call:[AssertionResult,new,reset]
+reset call:[AssertionResult] noreturn:[AssertionResult]
+operator*
+operator*
+operator->
+operator->
+valueOr
+some
+none
+operator!
+operatorbool call:[some] noreturn:[some]
+Option < unsigned long >
+Option < unsigned long >
+Option < unsigned long >
+Option < unsigned long > call:[reset] noreturn:[reset]
+operator= call:[long,new,reset] noreturn:[long]
+operator= call:[long,new,reset]
+reset call:[long] noreturn:[long]
+operator*
+operator*
+operator->
+operator->
+valueOr
+some
+none
+operator!
+operatorbool call:[some] noreturn:[some]
+MatchExpr < std :: string , const StringMatcher & >
+streamReconstructedExpression call:[stringify,toString]
+operator&& call:[MatchAllOf < std :: exception >]
+operator|| call:[MatchAnyOf < std :: exception >]
+operator! call:[MatchNotOf < std :: exception >] noreturn:[MatchNotOf < std :: exception >]
+operator&& call:[MatchAllOf < std :: string >]
+operator|| call:[MatchAnyOf < std :: string >]
+operator! call:[MatchNotOf < std :: string >] noreturn:[MatchNotOf < std :: string >]
+ExprLhs < bool >
+operator== call:[compareEqual]
+operator==
+operator!= call:[compareNotEqual]
+operator!=
+operator>
+operator<
+operator>=
+operator<=
+operator|
+operator&
+operator^
+operator&& call:[static_assert] noreturn:[static_assert]
+operator|| call:[static_assert] noreturn:[static_assert]
+makeUnaryExpr
+convert call:[operator<<,str] noreturn:[str]
+convert call:[convertUnstreamable] noreturn:[convertUnstreamable]
+convert call:[operator<<,str] noreturn:[str]
+convert call:[convertUnstreamable] noreturn:[convertUnstreamable]
+convert call:[operator<<,str] noreturn:[str]
+convert call:[convertUnstreamable] noreturn:[convertUnstreamable]
+convert call:[operator<<,str] noreturn:[str]
+convert call:[convertUnstreamable] noreturn:[convertUnstreamable]
+convert call:[operator<<,str] noreturn:[str]
+convert call:[convertUnstreamable] noreturn:[convertUnstreamable]
+convert call:[operator<<,str] noreturn:[str]
+convert call:[convertUnstreamable] noreturn:[convertUnstreamable]
+convert call:[operator<<,str] noreturn:[str]
+convert call:[convertUnstreamable] noreturn:[convertUnstreamable]
+convert call:[operator<<,str] noreturn:[str]
+convert call:[convertUnstreamable] noreturn:[convertUnstreamable]
+convert call:[operator<<,str] noreturn:[str]
+convert call:[convertUnstreamable] noreturn:[convertUnstreamable]
+convert call:[operator<<,str] noreturn:[str]
+convert call:[convertUnstreamable] noreturn:[convertUnstreamable]
+convert call:[operator<<,str] noreturn:[str]
+convert call:[convertUnstreamable] noreturn:[convertUnstreamable]
+convert call:[operator<<,str] noreturn:[str]
+convert call:[convertUnstreamable] noreturn:[convertUnstreamable]
+convert call:[operator<<,str] noreturn:[str]
+convert call:[convertUnstreamable] noreturn:[convertUnstreamable]
+convert call:[operator<<,str] noreturn:[str]
+convert call:[convertUnstreamable] noreturn:[convertUnstreamable]
+convert call:[operator<<,str] noreturn:[str]
+convert call:[convertUnstreamable] noreturn:[convertUnstreamable]
+convert call:[operator<<,str] noreturn:[str]
+convert call:[convertUnstreamable] noreturn:[convertUnstreamable]
+convert call:[operator<<,str] noreturn:[str]
+convert call:[convertUnstreamable] noreturn:[convertUnstreamable]
+convert call:[operator<<,str] noreturn:[str]
+convert call:[convertUnstreamable] noreturn:[convertUnstreamable]
+convert call:[operator<<,str] noreturn:[str]
+convert call:[convertUnstreamable] noreturn:[convertUnstreamable]
+convert call:[operator<<,str] noreturn:[str]
+convert call:[convertUnstreamable] noreturn:[convertUnstreamable]
+Node < TestCaseStats , SectionNode >
+Node < TestCaseStats , SectionNode >
+Node < TestGroupStats , Node < TestCaseStats , SectionNode > >
+Node < TestGroupStats , Node < TestCaseStats , SectionNode > >
+Node < TestRunStats , Node < TestGroupStats , Node < TestCaseStats , SectionNode > > >
+Node < TestRunStats , Node < TestGroupStats , Node < TestCaseStats , SectionNode > > >
+value call:[enforceOk]
+ResultValueBase < ParseResultType >
+ResultValueBase < ParseResultType > call:[ParseResultType,new] noreturn:[ParseResultType]
+ResultValueBase < ParseResultType > call:[ParseResultType,new] noreturn:[ParseResultType]
+operator= call:[ParseResultType,new,operator=] noreturn:[ParseResultType]
+ResultValueBase < ParseResultType > call:[ParseResultType] noreturn:[ParseResultType]
+value call:[enforceOk]
+ResultValueBase < ParseState >
+ResultValueBase < ParseState > call:[ParseState,new] noreturn:[ParseState]
+ResultValueBase < ParseState > call:[ParseState,new] noreturn:[ParseState]
+operator= call:[ParseState,new,operator=] noreturn:[ParseState]
+ResultValueBase < ParseState > call:[ParseState] noreturn:[ParseState]
+operator= call:[operator=]
+reset call:[reset]
+operator= call:[operator=]
+reset call:[reset]
+operator= call:[operator=]
+reset call:[reset]
+MatchNotOf < std :: exception >
+match call:[match] noreturn:[match]
+describe call:[toString] noreturn:[toString]
+MatchNotOf < std >
+match call:[match] noreturn:[match]
+describe call:[toString] noreturn:[toString]
+MatchNotOf < std :: string >
+match call:[match] noreturn:[match]
+describe call:[toString] noreturn:[toString]
+match call:[match]
+describe call:[reserve,size,toString] noreturn:[toString]
+operator|| call:[copy,push_back]
+match call:[match]
+describe call:[reserve,size,toString] noreturn:[toString]
+operator|| call:[copy,push_back]
+match call:[match]
+describe call:[reserve,size,toString] noreturn:[toString]
+operator|| call:[copy,push_back]
+match call:[match]
+describe call:[reserve,size,toString] noreturn:[toString]
+operator&& call:[copy,push_back]
+match call:[match]
+describe call:[reserve,size,toString] noreturn:[toString]
+operator&& call:[copy,push_back]
+match call:[match]
+describe call:[reserve,size,toString] noreturn:[toString]
+operator&& call:[copy,push_back]
+streamReconstructedExpression call:[stringify] noreturn:[stringify]
+UnaryExpr < bool >
+streamReconstructedExpression call:[formatReconstructedExpression,stringify] noreturn:[formatReconstructedExpression]
+BinaryExpr < bool , bool >
+operator&& call:[static_assert] noreturn:[static_assert]
+operator|| call:[static_assert] noreturn:[static_assert]
+operator== call:[static_assert] noreturn:[static_assert]
+operator!= call:[static_assert] noreturn:[static_assert]
+operator> call:[static_assert] noreturn:[static_assert]
+operator< call:[static_assert] noreturn:[static_assert]
+operator>= call:[static_assert] noreturn:[static_assert]
+operator<= call:[static_assert] noreturn:[static_assert]

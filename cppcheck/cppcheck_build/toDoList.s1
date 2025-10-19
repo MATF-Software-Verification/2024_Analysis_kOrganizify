@@ -1,0 +1,11 @@
+ToDoList
+loadData call:[fromJson,loadData] noreturn:[fromJson]
+fromJson call:[addTask,setIsChecked,setName,toArray,toBool,toString] noreturn:[addTask]
+toJson call:[QJsonValue,append,getIsChecked,getName] noreturn:[QJsonValue,append]
+saveData call:[saveData,toJson,toObject] noreturn:[saveData]
+getTasks
+setTasks
+addTask call:[append] noreturn:[append]
+removeTask call:[remove] noreturn:[remove]
+getTask
+toString call:[append,getName,getTasks,join] noreturn:[append]
