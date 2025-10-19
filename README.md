@@ -14,7 +14,7 @@ Analiza je izvršena na grani: `master`
 
 Heš kod commit-a: `006aac3aa0d534318bdc0cee7db898bd864601f0`
 
-## Korišćeni alati i dobijeni rezultati
+## Korišćeni alati
 U okviru analize korišćeni su sledeći alati i tehnike:
 
 1. **Cppcheck** – statička analiza koda, detekcija logičkih i stilskih grešaka.
@@ -43,7 +43,7 @@ Zatim se analiza pokreće komandom:
 Tada se generišu tekstualni izveštaj sa svim porukama upozorenja i HTML izveštaj, koji sadrži iste informacije ali prikazane preglednije. Rezultati se čuvaju u folderima `results` i `html_report`.
 
 
-#### Analiza rezultata
+### Analiza rezultata
 
 Rezultati analize Cppcheck alatom pokazali su da projekat kOrganizify nema kritične greške u radu sa memorijom ili nedefinisano ponašanje.
 Uočen je manji broj upozorenja koja se odnose na **neinicijalizovane članove klasa**, **neiskorišćene promenljive** i pojedine **stilske preporuke** (npr. korišćenje STL algoritama umesto ručnih petlji).
