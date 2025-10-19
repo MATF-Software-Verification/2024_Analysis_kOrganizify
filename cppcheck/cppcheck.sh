@@ -9,6 +9,7 @@ PROJECT_DIR="../src"
 REPORT_DIR="./results"
 BUILD_DIR="./cppcheck_build"
 HTML_DIR="./html-report"
+TEST_DIR="../src/kOrganizify/Test"
 
 
 mkdir -p "$REPORT_DIR"
