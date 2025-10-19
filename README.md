@@ -47,10 +47,9 @@ Tada se generišu tekstualni izveštaj sa svim porukama upozorenja i HTML izveš
 
 ### Analiza rezultata
 
-Rezultati analize Cppcheck alatom pokazali su da projekat kOrganizify nema kritične greške u radu sa memorijom ili nedefinisano ponašanje.
-Uočen je manji broj upozorenja koja se odnose na **neinicijalizovane članove klasa**, **neiskorišćene promenljive** i pojedine **stilske preporuke** (npr. korišćenje STL algoritama umesto ručnih petlji).
-Većina nalaza spada u kategoriju **poboljšanja čitljivosti i održavanja koda**, što ukazuje na stabilnu osnovu projekta i dobar nivo kvaliteta implementacije.
-Tokom analize, Cppcheck je prijavio nekoliko sintaksnih grešaka unutar fajla `catch.hpp`, koji pripada eksternoj biblioteci Catch2 korišćenoj za testiranje. Ove poruke se odnose na Objective-C delove koda unutar same biblioteke i ne predstavljaju greške u projektu kOrganizify.
+Rezultati analize alatom Cppcheck pokazali su da projekat kOrganizify nema kritične greške u radu sa memorijom, pokazivačima niti nedefinisano ponašanje.
+Većina prijavljenih poruka odnosi se na eksterni kod u okviru test okvira Catch2 i ne utiče na funkcionalnost projekta.
+U okviru samog izvornog koda projekta nisu pronađene značajne greške, već samo manji broj informativnih upozorenja koja ne ukazuju na probleme u radu programa.
 
 ## 2. **Clang-format**
 
