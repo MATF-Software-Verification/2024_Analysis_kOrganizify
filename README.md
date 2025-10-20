@@ -87,3 +87,51 @@ Detaljne razlike moguće je pregledati pomoću:
 ```bash
 diff -ru ../src formatted_output | less
 ```
+
+## 3. **Valgrind (Memcheck)**
+
+**Memcheck** je osnovni alat Valgrind paketa, namenjen detekciji curenja memorije, pristupa oslobođenim ili neinicijalizovanim delovima memorije i drugih problema koji se javljaju tokom izvršavanja programa.
+Omogućava detaljan uvid u stabilnost i ispravnost dinamičkog korišćenja memorije.
+
+### Reprodukcija rezultata
+
+Za instalaciju Valgrind alata koristi se sledeća komanda:
+```bash
+sudo apt install valgrind
+```
+Pokretanje analize se vrši pomoću skripte `valgrind_memcheck.sh`, koja se nalazi u direktorijumu `valgrind\memcheck`.
+Pre prvog pokretanja potrebno je omogućiti prava za izvršavanje komandom:
+```bash
+chmod +x valgrind_memcheck.sh
+```
+Zatim pokrenuti analizu:
+```bash
+./valgrind_memcheck.sh
+```
+Skripta pokreće program uz Valgrind alat Memcheck, a rezultati se smeštaju u fajl `memcheck_report.txt` u istom direktorijumu.
+
+### Analiza rezultata
+
+## 4. **Valgrind (Massif)**
+
+**Massif** je alat iz Valgrind paketa koji analizira potrošnju heap memorije tokom izvršavanja programa.
+Koristi se za identifikaciju funkcija i delova koda koji zauzimaju najviše memorije, čime pomaže u optimizaciji performansi aplikacije.
+
+### Reprodukcija rezultata
+
+Massif koristi isti Valgrind paket, pa nije potrebna dodatna instalacija.
+Analiza se pokreće pomoću skripte `valgrind_massif.sh`, koja se nalazi u folderu `valgrind\massif`.
+
+Pre pokretanja potrebno je omogućiti prava za izvršavanje:
+```bash
+chmod +x valgrind_massif.sh
+```
+Zatim pokrenuti:
+```bash
+./valgrind_massif.sh
+```
+Rezultati analize čuvaju se u fajlu `massif.out`, koji se može pregledati pomoću alata *ms_print*:
+```bash
+ms_print massif.out > massif_report.txt
+```
+### Analiza rezultata
