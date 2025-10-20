@@ -108,9 +108,27 @@ Zatim pokrenuti analizu:
 ```bash
 ./valgrind_memcheck.sh
 ```
-Skripta pokreće program uz Valgrind alat Memcheck, a rezultati se smeštaju u fajl `memcheck_report.txt` u istom direktorijumu.
+
+Skripta prihvata jedan argument koji određuje koji deo projekta se analizira:
+
+*`client` – pokreće analizu klijentske aplikacije (grafičko okruženje)
+
+*`server` – pokreće analizu serverskog dela aplikacije
+
+Primer pokretanja:
+```bash
+./valgrind_memcheck.sh client
+```
+
+Pre pokretanja analize skripta automatski kompajlira projekat pomoću `build_project.sh`, a zatim pokreće odabrani izvršni fajl, dok ga Memcheck nadgleda.
+Rezultati se smeštaju u fajl `memcheck_report.txt` u direktorijumu `valgrind/memcheck/results` u fajlu nazvanom po vremenu izvršavanja (npr. `memcheck_2025-10-20_15-29.txt`).
 
 ### Analiza rezultata
+
+Analiza sprovedena alatom Memcheck **nije pokazala ozbiljnije probleme** u radu sa memorijom.
+Nisu otkrivena curenja memorije (definitely lost = 0) niti pristupi oslobođenim blokovima, što znači da program pravilno alocira i oslobađa resurse.
+Pojedina upozorenja o neinicijalizovanim bajtovima potiču iz Qt biblioteka koje se koriste za grafički interfejs i ne odnose se na kod samog projekta.
+Rezultati ukazuju na to da aplikacija stabilno upravlja memorijom i da nema grešaka koje bi mogle uticati na njen normalan rad.
 
 ## 4. **Valgrind (Massif)**
 
