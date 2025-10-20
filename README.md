@@ -1,4 +1,4 @@
-# Analiza projekta "kOrganizify"
+# Analiza projekta "kOrganizify (in progress)"
 
 ## Uvod
 Ovaj rad predstavlja praktičnu primenu alata za statičku i dinamičku analizu u okviru predmeta **Verifikacija softvera** na Matematičkom fakultetu. U radu su prikazani rezultati verifikacije jednog studentskog projekta.
@@ -20,7 +20,7 @@ U okviru analize korišćeni su sledeći alati i tehnike:
 1. **Cppcheck** – statička analiza koda, detekcija logičkih i stilskih grešaka.
 2. **Clang-format** – formatiranje koda
 3. **Valgrind (Memcheck)** – dinamička analiza memorije i otkrivanje curenja i nevalidnog pristupa.
-4. **Jedinični testovi** – testiranje funkcionalnosti i merenje pokrivenosti koda.
+4. **Valgrind ()**
 
 ## 1. **Cppcheck**
 
@@ -53,7 +53,7 @@ U okviru samog izvornog koda projekta nisu pronađene značajne greške, već sa
 
 ## 2. **Clang-format**
 
-Clang-Format se koristi za automatsko formatiranje C/C++ koda prema definisanim stilskim pravilima, bez promene njegove funkcionalnosti.
+Clang-Format se koristi za automatsko formatiranje C/C++ koda prema definisanim stilskim pravilima, bez promene njegove funkcionalnosti. Koristi se za osiguravanje konzistentnog izgleda i čitljivosti izvornog koda.
 
 ### Reprodukcija rezultata
 
@@ -70,4 +70,20 @@ Zatim se skripta pokreće komandom:
 ```bash
 ./clang_format.sh
 ```
+Skript formatira sve .cpp i .h fajlove iz direktorijuma src/ i čuva rezultat u folderu formatted_output/, zadržavajući originalnu strukturu direktorijuma.
+**Napomena:**
+Podrazumevani stil formatiranja definisan je u skripti promenljivom STYLE="Google".
+Po želji se može koristiti i konfiguracioni fajl `.clang-format` u kojem se preciznije podešavaju pravila (npr. broj razmaka, poravnanje, veličina linije i sl.).
 
+### Rezultati primene
+
+Za pregled promena posle formatiranja može se koristiti komanda:
+
+```bash
+diff -rq ../src formatted_output
+```
+Ova komanda prikazuje sve fajlove čiji se sadržaj razlikuje nakon primene Clang-Format alata.
+Detaljne razlike moguće je pregledati pomoću:
+```bash
+diff -ru ../src formatted_output | less
+```
