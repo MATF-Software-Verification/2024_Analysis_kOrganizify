@@ -1,4 +1,4 @@
-# Analiza projekta "kOrganizify (in progress)"
+# Analiza projekta "kOrganizify" (in progress)
 
 ## Uvod
 Ovaj rad predstavlja praktičnu primenu alata za statičku i dinamičku analizu u okviru predmeta **Verifikacija softvera** na Matematičkom fakultetu. U radu su prikazani rezultati verifikacije jednog studentskog projekta.
