@@ -99,6 +99,7 @@ Za instalaciju Valgrind alata koristi se sledeća komanda:
 ```bash
 sudo apt install valgrind
 ```
+
 Pokretanje analize se vrši pomoću skripte `valgrind_memcheck.sh`, koja se nalazi u direktorijumu `valgrind\memcheck`.
 Pre prvog pokretanja potrebno je omogućiti prava za izvršavanje komandom:
 ```bash
@@ -138,6 +139,12 @@ Koristi se za identifikaciju funkcija i delova koda koji zauzimaju najviše memo
 ### Reprodukcija rezultata
 
 Massif koristi isti Valgrind paket, pa nije potrebna dodatna instalacija.
+
+Opciono, za vizuelni prikaz resultata:
+```bash
+sudo apt install massif-visualizer
+```
+
 Analiza se pokreće pomoću skripte `valgrind_massif.sh`, koja se nalazi u folderu `valgrind\massif`.
 
 Pre pokretanja potrebno je omogućiti prava za izvršavanje:
@@ -148,8 +155,10 @@ Zatim pokrenuti:
 ```bash
 ./valgrind_massif.sh
 ```
-Rezultati analize čuvaju se u fajlu `massif.out`, koji se može pregledati pomoću alata *ms_print*:
-```bash
-ms_print massif.out > massif_report.txt
-```
+Skripta automatski generiše dva izveštaja: `massif_<timestamp>.out` i formatirani tekstualni izveštaj `massif_<timestamp>.txt`. Po završetku analize, otvara se i grafički prikaz u alatu **Massif Visualizer**, koji prikazuje promene u zauzeću memorije tokom vremena.
+
 ### Analiza rezultata
+Rezultati analize pokazuju da projekat *kOrganizify* održava stabilno korišćenje memorije tokom rada.
+Većina alokacija potiče iz Qt biblioteka koje upravljaju grafičkim elementima i ne ukazuju na greške u izvornom kodu.
+Ukupno zauzeće memorije ostaje u granicama očekivanog, bez znakova curenja ili nekontrolisanog rasta upotrebe memorije.
+
