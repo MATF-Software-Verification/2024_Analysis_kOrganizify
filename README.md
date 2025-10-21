@@ -20,7 +20,9 @@ U okviru analize korišćeni su sledeći alati i tehnike:
 1. **Cppcheck** – statička analiza koda, detekcija logičkih i stilskih grešaka.
 2. **Clang-format** – formatiranje koda
 3. **Valgrind (Memcheck)** – dinamička analiza memorije i otkrivanje curenja i nevalidnog pristupa.
-4. **Valgrind ()**
+4. **Valgrind (Massif)** - profajler heap memorije
+
+Detaljna analiza rada alata nalazi se u fajlu *ProjectAnalysisReport.pdf*.
 
 ## 1. **Cppcheck**
 
